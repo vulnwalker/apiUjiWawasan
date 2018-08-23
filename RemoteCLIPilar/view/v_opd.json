@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_opd",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_opd` AS select `ref_skpd`.`c1` AS `c1`,`ref_skpd`.`c` AS `c`,`ref_skpd`.`d` AS `d`,`ref_skpd`.`e` AS `e`,`ref_skpd`.`nm_skpd` AS `nmopd` from `ref_skpd` where ((`ref_skpd`.`c` <> '00') and (`ref_skpd`.`d` <> '00') and (`ref_skpd`.`e` = '00'))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

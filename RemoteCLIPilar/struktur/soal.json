@@ -1,0 +1,158 @@
+{
+    "tableName": "soal",
+    "dumpFile": "dump\/soal.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "kategori",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "gambar",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "pertanyaan",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "point",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "jawaban",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "waktu",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "energi",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('1','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Ibukota Jawa Tengah','200','SEMARANG','50','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('2','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Ibukota Jawa Timur','200','SURABAYA','50','30') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('11','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Pangeran Diponegoro lahir di mana ?','100','YOGYAKARTA','60','100') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('12','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Siapakah presiden Indonesia yang ke-3 ?','100','HABIBIE','55','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('13','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di kota mana pembukaan Asian Games 2018 diadakan ?','150','JAKARTA','55','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('14','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Sungai terpanjang di Indonesia adalah sungai ?','250','KAPUAS','60','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('15','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Gunung tertinggi di Indonesia adalah ?','200','PUNCAK JAYA','60','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('16','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di provinsi mana Gunung Tangkuban Perahu ?','150','JAWA BARAT','50','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('17','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Simbol atau lambang negara Indonesia ','100','GARUDA','50','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('18','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di kota mana Ir Soekarno lahir ','200','SURABAYA','50','30') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('19','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Pada bulan apa Ir Soekarno lahir','150','JUNI','55','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('20','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Budaya lokal sering disebut juga sebagai kebudayaan ...','200','DAERAH','60','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('21','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Proses mempelajari, menghayati dan mnanamkan dalam diri, nilai dan norma-norma social yang berlaku di masyarakat disebut.....','200','SOSIALISASI','65','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('22','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Bukti pembayaran pengeposan surat disebut.....','200','Prangko','60','20') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('23','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Julukan kota jakarta (*tahun 1527-1619 )','200','Jayakarta','60','30') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('24','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Peristiwa 10 november 1945 terjadi di kota','200','Surabaya','60','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('25','3','https:\/\/vignette.wikia.nocookie.net\/swfanon\/images\/7\/77\/Pikachu.png\/revision\/latest?cb=20110603135558','Kadal Apakah Ini ??','200','PIKACHU','999999','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('26','3','','Kadal Apakah Ini ??','200','PIKACHU','999999','25') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('28','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Letak Candi Borobudur di daerah mana ?','200','MAGELANG','50','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('29','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Candi terbesar di dunia adalah candi ...','200','BOROBUDUR','50','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('30','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Pendiri pabrik Timor (mobil nasional)','200','HUTOMO MANDALA PUTRA','50','40') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('31','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di kota mana makam presiden Soekarno','200','BLITAR','47','45') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('32','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Julukan kota udang','150','CIREBON','20','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('33','1','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Pempek adalah makanan khas','200','PALEMBANG','35','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('34','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Julukan klub Nyoya Tua','200','JUVENTUS','40','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('35','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Legenda nomor 46 (motoGP)','200','VALENTINO ROSSI','40','70') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('36','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Top Score Piala Dunia 2018','200','HARRY KANE','40','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('37','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Julukan klub Maung Bandung','200','PERSIB','30','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('38','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Ayrton Senna meninggal di sirkuit','200','IMOLA','40','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('39','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di kota mana Alessandro Del Piero lahir ','200','CONEGLIANO','45','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('40','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Di negara mana diadakan piala dunia 2010','200','AFRIKA SELATAN','35','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('41','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Legenda formula 1 yang meninggal di sirkuit Imola','200','AYRTON SENNA','33','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('42','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','kerajaan yang berpusat di Jawa Timur, Indonesia, yang pernah berdiri dari sekitar tahun 1293 hingga 1500 M','200','MAJAPAHIT','44','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('43','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Gajah Mada terkenal dengan sumpahnya','200','SUMPAH PALAPA','30','55') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('44','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Pencetak gol terbanyak pada piala dunia 1974','200','GRZEGORS LATO','55','65') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('45','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Berasal dari negara mana pemain sepak bola Salvatore Schillaci  ','200','ITALIA','44','55') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('46','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Siapa Top skor piala dunia sepanjang sejarah (16 gol)','200','MIROSLAV KLOSE','37','50') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('47','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Ketua umum PSSI','200','EDY RAHMAYADI','45','60') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('48','4','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','siapakah CR7','200','CRISTIANO RONALDO','40','70') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('49','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Siapakah yang menjahit bendera merah putih','200','FATMAWATI','35','67') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('50','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Konferensi asia afrika pada tahun 1955 diresmikan oleh','200','SOEKARNO','45','67') ",
+        "INSERT INTO soal (id,kategori,gambar,pertanyaan,point,jawaban,waktu,energi) values ('51','2','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/soal\/d41d8cd98f00b204e9800998ecf8427e.jpg','Konferensi asia afrika berlangsung di kota ','200','BANDUNG','33','56') "
+    ]
+}

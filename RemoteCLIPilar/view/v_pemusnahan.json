@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pemusnahan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pemusnahan` AS select `aa`.`Id` AS `Id`,`aa`.`id_bukuinduk` AS `id_bukuinduk`,`aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`noreg` AS `noreg`,`aa`.`thn_perolehan` AS `thn_perolehan`,`aa`.`jumlah_harga` AS `jumlah_harga`,`aa`.`refid_pemusnahan` AS `refid_pemusnahan`,`aa`.`ket` AS `ket`,`aa`.`kondisi` AS `kondisi`,`aa`.`k` AS `k`,`aa`.`l` AS `l`,`aa`.`m` AS `m`,`aa`.`n` AS `n`,`aa`.`o` AS `o`,`aa`.`p` AS `p`,`aa`.`thn_akun` AS `thn_akun`,`bb`.`no_ba` AS `no_ba`,`bb`.`tgl_ba` AS `tgl_ba`,`bb`.`sttemp` AS `sttemp`,`bb`.`thn_anggaran` AS `thn_anggaran`,`aa`.`f1` AS `f1`,`aa`.`f2` AS `f2`,`bb`.`cara_pemusnahan` AS `cara_pemusnahan`,`aa`.`idbi_awal` AS `idbi_awal`,`aa`.`tgl_buku` AS `tgl_buku`,`aa`.`st_hapus` AS `st_hapus`,`aa`.`nilai_susut` AS `nilai_susut` from (`pemusnahan_det` `aa` left join `pemusnahan` `bb` on((`aa`.`refid_pemusnahan` = `bb`.`id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

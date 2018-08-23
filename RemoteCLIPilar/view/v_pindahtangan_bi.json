@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pindahtangan_bi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pindahtangan_bi` AS select `aa`.`id` AS `id`,`aa`.`id_bukuinduk` AS `id_bukuinduk`,`aa`.`tgl_pemindahtanganan` AS `tgl_pemindahtanganan`,`aa`.`bentuk_pemindahtanganan` AS `bentuk_pemindahtanganan`,`aa`.`kepada_nama` AS `kepada_nama`,`aa`.`kepada_alamat` AS `kepada_alamat`,`aa`.`uraian` AS `uraian`,`aa`.`ket` AS `ket`,`aa`.`tahun` AS `tahun`,`aa`.`kondisi_akhir` AS `kondisi_akhir`,`bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`e1` AS `e1`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`noreg` AS `noreg`,`bb`.`jml_barang` AS `jml_barang`,`bb`.`satuan` AS `satuan`,`bb`.`harga` AS `harga`,`bb`.`jml_harga` AS `jml_harga`,`bb`.`kondisi` AS `kondisi`,`bb`.`status_barang` AS `status_barang`,`bb`.`asal_usul` AS `asal_usul`,`bb`.`id_lama` AS `id_lama`,`bb`.`idawal` AS `idawal` from (`pemindahtanganan` `aa` left join `buku_induk` `bb` on((`aa`.`id_bukuinduk` = `bb`.`id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

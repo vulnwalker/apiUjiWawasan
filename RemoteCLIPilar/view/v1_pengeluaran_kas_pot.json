@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_pengeluaran_kas_pot",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_pengeluaran_kas_pot` AS select `a`.`Id` AS `Id`,`a`.`jumlah` AS `jumlah`,`a`.`jns` AS `jns`,`a`.`status` AS `status`,`a`.`sttemp` AS `sttemp`,`a`.`tahun` AS `tahun`,`a`.`tgl_create` AS `tgl_create`,`a`.`tgl_update` AS `tgl_update`,`a`.`refid` AS `refid`,`a`.`uid` AS `uid`,`a`.`uid_create` AS `uid_create`,`a`.`refid_potongan_spm` AS `refid_potongan_spm`,`a`.`k` AS `k`,`a`.`l` AS `l`,`a`.`m` AS `m`,`a`.`n` AS `n`,`a`.`o` AS `o`,`b`.`persen` AS `persen`,`b`.`nama_potongan` AS `nama_potongan`,`b`.`uraian_rek` AS `uraian_rek`,`c`.`nm_rekening` AS `nm_rekening` from ((`t_pengeluaran_kas_pot` `a` left join `v1_ref_potongan_spm` `b` on((`a`.`refid_potongan_spm` = `b`.`Id`))) left join `ref_rekening` `c` on(((`a`.`k` = `c`.`k`) and (`a`.`l` = `c`.`l`) and (`a`.`m` = `c`.`m`) and (`a`.`n` = `c`.`n`) and (`a`.`o` = `c`.`o`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

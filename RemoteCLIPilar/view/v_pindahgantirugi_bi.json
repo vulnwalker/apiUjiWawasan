@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pindahgantirugi_bi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pindahgantirugi_bi` AS select `aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`thn_perolehan` AS `thn_perolehan`,`aa`.`noreg` AS `noreg`,`aa`.`jml_barang` AS `jml_barang`,`aa`.`jml_harga` AS `jml_harga`,`aa`.`tgl_pemindahtanganan` AS `tgl` from `v_pindahtangan_bi` `aa` union select `bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`e1` AS `e1`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`noreg` AS `noreg`,`bb`.`jml_barang` AS `jml_barang`,`bb`.`jml_harga` AS `jml_harga`,`bb`.`tgl_gantirugi` AS `tgl` from `v_gantirugi_bi` `bb`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

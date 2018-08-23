@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_pengeluaran_kas_rek",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_pengeluaran_kas_rek` AS select `b`.`nm_rekening` AS `nm_rekening`,`a`.`Id` AS `Id`,`a`.`jns` AS `jns`,`a`.`k` AS `k`,`a`.`l` AS `l`,`a`.`m` AS `m`,`a`.`n` AS `n`,`a`.`o` AS `o`,`a`.`jumlah` AS `jumlah`,`a`.`refid` AS `refid`,`a`.`status` AS `status`,`a`.`uid` AS `uid`,`a`.`sttemp` AS `sttemp`,`a`.`tgl_create` AS `tgl_create`,`a`.`tgl_update` AS `tgl_update`,`a`.`tahun` AS `tahun`,`a`.`uid_create` AS `uid_create` from (`t_pengeluaran_kas_rek` `a` left join `ref_rekening` `b` on(((`a`.`k` = `b`.`k`) and (`a`.`l` = `b`.`l`) and (`a`.`m` = `b`.`m`) and (`a`.`n` = `b`.`n`) and (`a`.`o` = `b`.`o`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

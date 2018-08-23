@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_birms",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_birms` AS select `t_birm`.`pid` AS `pid`,`t_birm`.`unitID` AS `unitID`,`t_birm`.`bast_no` AS `bast_no`,`t_birm`.`bast_tgl` AS `bast_tgl`,`t_birm`.`kode_pekerjaan` AS `kode_pekerjaan`,`t_birm`.`kontrak_no` AS `kontrak_no`,`t_birm`.`kontrak_tgl` AS `kontrak_tgl`,`t_birm`.`nama_unit_kerja` AS `nama_unit_kerja`,`t_birm`.`namakegiatan` AS `namakegiatan`,`t_birm`.`namapekerjaan` AS `namapekerjaan`,`t_birm`.`namaprogram` AS `namaprogram`,`t_birm`.`nilaikontrak` AS `nilaikontrak`,`t_birm`.`sumberdana` AS `sumberdana`,`t_birm`.`sumberdanaid` AS `sumberdanaid`,`t_birm`.`suratpesanan_no` AS `suratpesanan_no`,`t_birm`.`suratpesanan_tgl` AS `suratpesanan_tgl`,`t_birm`.`c1` AS `c1`,`t_birm`.`c` AS `c`,`t_birm`.`d` AS `d`,`t_birm`.`e` AS `e`,`t_birm_pekerjaan`.`ref_idbirm` AS `ref_idbirm`,`t_birm_pekerjaan`.`nama` AS `nama`,`t_birm_pekerjaan`.`jumlah_barang_vol1` AS `jumlah_barang_vol1`,`t_birm_pekerjaan`.`jumlah_barang_vol2` AS `jumlah_barang_vol2`,`t_birm_pekerjaan`.`harga` AS `harga`,`t_birm_pekerjaan`.`satuan` AS `satuan`,`t_birm`.`ref_idterima` AS `ref_idterima` from (`t_birm` join `t_birm_pekerjaan` on((`t_birm_pekerjaan`.`ref_idbirm` = `t_birm`.`pid`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

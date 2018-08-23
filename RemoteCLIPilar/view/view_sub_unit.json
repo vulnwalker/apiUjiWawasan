@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "view_sub_unit",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_sub_unit` AS select `a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`a`.`e1` AS `e1`,`a`.`nm_skpd` AS `nm_sub_unit`,`b`.`nm_skpd` AS `nm_bidang`,`c`.`nm_skpd` AS `nm_skpd`,`d`.`nm_skpd` AS `nm_unit`,concat(`a`.`c`,'.',`a`.`d`,'.',`a`.`e`,'.',`a`.`e1`) AS `kode_skpd` from (((`ref_skpd` `a` left join `ref_skpd` `b` on(((`a`.`c` = `b`.`c`) and (`b`.`d` = '00') and (`b`.`e` = '00') and (`b`.`e1` = '000')))) left join `ref_skpd` `c` on(((`a`.`c` = `c`.`c`) and (`a`.`d` = `c`.`d`) and (`c`.`e` = '00') and (`c`.`e1` = '000')))) left join `ref_skpd` `d` on(((`a`.`c` = `d`.`c`) and (`a`.`d` = `d`.`d`) and (`a`.`e` = `d`.`e`) and (`d`.`e1` = '000')))) where (`a`.`e1` <> '000')",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

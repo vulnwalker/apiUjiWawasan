@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_total_atribusi_rincian",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_total_atribusi_rincian` AS select ifnull(sum(`t_atribusi_rincian`.`jumlah`),0) AS `jml`,`t_atribusi_rincian`.`refid_terima` AS `refid_terima` from `t_atribusi_rincian` where (`t_atribusi_rincian`.`sttemp` = '0') group by `t_atribusi_rincian`.`refid_terima`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

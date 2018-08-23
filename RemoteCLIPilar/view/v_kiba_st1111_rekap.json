@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_kiba_st1111_rekap",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_kiba_st1111_rekap` AS select `aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`bb`.`nmbidang` AS `nmbidang`,`cc`.`nmopd` AS `nmopd`,`dd`.`nmunit` AS `nmunit`,`ee`.`jml` AS `jml` from ((((`ref_skpd` `aa` left join `v_bidang` `bb` on((`aa`.`c` = `bb`.`c`))) left join `v_opd` `cc` on(((`aa`.`c` = `cc`.`c`) and (`aa`.`d` = `cc`.`d`)))) left join `v_unit` `dd` on(((`aa`.`c` = `dd`.`c`) and (`aa`.`d` = `dd`.`d`) and (`aa`.`e` = `dd`.`e`)))) left join `v_kiba_st1111` `ee` on(((`aa`.`c` = `ee`.`c`) and (`aa`.`d` = `ee`.`d`) and (`aa`.`e` = `ee`.`e`)))) where ((`aa`.`c` <> '00') and (`aa`.`d` <> '00') and (`aa`.`e` <> '00')) order by `aa`.`c`,`aa`.`d`,`aa`.`e`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

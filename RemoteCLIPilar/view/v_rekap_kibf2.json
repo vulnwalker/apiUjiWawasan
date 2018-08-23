@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_rekap_kibf2",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_rekap_kibf2` AS select `r`.`c` AS `c`,`r`.`d` AS `d`,`r`.`e` AS `e`,`r`.`nm_skpd` AS `nm_skpd`,`a1`.`jml` AS `jml`,`a1`.`jmlbrg` AS `jmlbrg` from (`ref_skpd` `r` left join `v_rekap_kibf` `a1` on(((`r`.`c` = `a1`.`c`) and (`r`.`d` = `a1`.`d`) and (`r`.`e` = `a1`.`e`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

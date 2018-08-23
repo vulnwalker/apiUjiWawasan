@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_bast",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_bast` AS select `aa`.`tgl_ba` AS `tgl_ba`,`aa`.`no_ba` AS `no_ba`,`aa`.`no_spk` AS `no_spk`,`aa`.`tgl_spk` AS `tgl_spk`,`aa`.`bk` AS `bk`,`aa`.`ck` AS `ck`,`aa`.`dk` AS `dk`,`aa`.`bk_p` AS `bk_p`,`aa`.`ck_p` AS `ck_p`,`aa`.`dk_p` AS `dk_p`,`aa`.`p` AS `p`,`aa`.`q` AS `q`,`bb`.`m1` AS `m1`,`bb`.`m2` AS `m2`,`bb`.`m3` AS `m3`,`bb`.`m4` AS `m4`,`bb`.`m5` AS `m5`,count(0) AS `jml_barang`,sum((`aa`.`jml_harga` - `aa`.`harga_atribusi`)) AS `harga_beli`,sum(`aa`.`harga_atribusi`) AS `harga_atribusi`,`aa`.`tgl_buku` AS `tgl_buku`,`aa`.`thn_perolehan` AS `thn_perolehan` from (`buku_induk` `aa` join `ref_barang` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`i` = `bb`.`i`) and (`aa`.`j` = `bb`.`j`)))) where (((isnull(`aa`.`id_lama`) = 1) or (`aa`.`id_lama` = '')) and (`aa`.`tgl_ba` is not null) and (`aa`.`tgl_ba` <> '0000-00-00')) group by `aa`.`tgl_ba`,`aa`.`no_ba`,`aa`.`no_spk`,`aa`.`tgl_spk`,`aa`.`bk`,`aa`.`ck`,`aa`.`dk`,`aa`.`bk_p`,`aa`.`ck_p`,`aa`.`dk_p`,`aa`.`p`,`aa`.`q`,`bb`.`m1`,`bb`.`m2`,`bb`.`m3`,`bb`.`m4`,`bb`.`m5`,`aa`.`tgl_buku`,`aa`.`thn_perolehan`",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

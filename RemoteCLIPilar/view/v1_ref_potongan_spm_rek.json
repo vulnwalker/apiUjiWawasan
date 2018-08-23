@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_ref_potongan_spm_rek",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_ref_potongan_spm_rek` AS select `a`.`Id` AS `Id`,`a`.`k` AS `k`,`a`.`l` AS `l`,`a`.`m` AS `m`,`a`.`n` AS `n`,`a`.`o` AS `o`,`a`.`uraian_rek` AS `uraian_rek`,`a`.`refid_potongan` AS `refid_potongan`,`a`.`nama_potongan` AS `nama_potongan`,`a`.`persen` AS `persen`,`b`.`nm_rekening` AS `nm_rekening` from (`v1_ref_potongan_spm` `a` left join `ref_rekening` `b` on(((`a`.`k` = `b`.`k`) and (`a`.`l` = `b`.`l`) and (`a`.`m` = `b`.`m`) and (`a`.`n` = `b`.`n`) and (`a`.`o` = `b`.`o`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

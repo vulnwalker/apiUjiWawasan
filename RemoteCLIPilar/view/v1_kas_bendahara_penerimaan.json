@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_kas_bendahara_penerimaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_kas_bendahara_penerimaan` AS select `a`.`Id` AS `Id`,`a`.`c1` AS `c1`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`a`.`e1` AS `e1`,`a`.`e2` AS `e2`,`a`.`e3` AS `e3`,`a`.`refid` AS `refid`,`a`.`refid_dari` AS `refid_dari`,`a`.`tgl_trans` AS `tgl_trans`,`a`.`no_bukti` AS `no_bukti`,`a`.`refid_kas_bendahara` AS `refid_kas_bendahara`,`a`.`cara_setor` AS `cara_setor`,`a`.`uraian` AS `uraian`,`a`.`k` AS `k`,`a`.`l` AS `l`,`a`.`m` AS `m`,`a`.`n` AS `n`,`a`.`o` AS `o`,`a`.`jml` AS `jml`,`a`.`uid` AS `uid`,`a`.`tgl_create` AS `tgl_create`,`a`.`uid_create` AS `uid_create`,`a`.`tgl_update` AS `tgl_update`,`b`.`nm_bendahara` AS `nm_bendahara` from (`t_kas_bendahara_penerimaan` `a` left join `ref_kas_bendahara` `b` on((`a`.`refid_kas_bendahara` = `b`.`Id`)))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

@@ -1,0 +1,98 @@
+{
+    "tableName": "sesion",
+    "dumpFile": "dump\/sesion.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "tanggal_mulai",
+            "COLUMN_TYPE": "date",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "tanggal_selesai",
+            "COLUMN_TYPE": "date",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "judul",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "deskripsi",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "gambar",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO sesion (id,tanggal_mulai,tanggal_selesai,judul,deskripsi,gambar) values ('1','2018-08-16','2018-09-16','Bulan Agustus','-','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/session\/bdad1e374ee42dd2bffce8cd308b2821.jpg') "
+    ]
+}

@@ -1,0 +1,183 @@
+[{
+    "databaseName": "setup_atis",
+    "tables": [
+        {
+          "table_name": "plafon_anggaran",
+          "json_file": "struktur/plafon_anggaran.json"
+        },
+        {
+          "table_name": "tabel_anggaran",
+          "json_file": "struktur/tabel_anggaran.json"
+        },
+        {
+          "table_name": "tabel_rka",
+          "json_file": "struktur/tabel_rka.json"
+        },
+        {
+          "table_name": "tabel_dpa",
+          "json_file": "struktur/tabel_dpa.json"
+        },
+        {
+          "table_name": "tabel_dpa",
+          "json_file": "struktur/tabel_dpa.json"
+        },
+        {
+          "table_name": "sync_rka",
+          "json_file": "struktur/sync_rka.json"
+        },
+        {
+          "table_name": "sync_dpa",
+          "json_file": "struktur/sync_rka.json"
+        },
+        {
+          "table_name": "tabel_spd",
+          "json_file": "struktur/tabel_spd.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_belanja_langsung",
+          "json_file": "struktur/temp_rekening_rka_belanja_langsung.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_belanja_tidak_langsung",
+          "json_file": "struktur/temp_rekening_rka_belanja_tidak_langsung.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_pembiayaan_penerimaan",
+          "json_file": "struktur/temp_rekening_rka_pembiayaan_penerimaan.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_pembiayaan_pengeluaran",
+          "json_file": "struktur/temp_rekening_rka_pembiayaan_pengeluaran.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_pendapatan_pad",
+          "json_file": "struktur/temp_rekening_rka_pendapatan_pad.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_pendapatan_dp",
+          "json_file": "struktur/temp_rekening_rka_pendapatan_dp.json"
+        },
+        {
+          "table_name": "temp_rekening_rka_pendapatan_lp",
+          "json_file": "struktur/temp_rekening_rka_pendapatan_lp.json"
+        },
+        {
+          "table_name": "temp_remove_rka_1_dp",
+          "json_file": "struktur/temp_remove_rka_1_dp.json"
+        },
+        {
+          "table_name": "temp_remove_rka_1_lp",
+          "json_file": "struktur/temp_remove_rka_1_lp.json"
+        },
+        {
+          "table_name": "temp_remove_rka_1_pad",
+          "json_file": "struktur/temp_remove_rka_1_pad.json"
+        },
+        {
+          "table_name": "temp_remove_rka_221",
+          "json_file": "struktur/temp_remove_rka_221.json"
+        },
+        {
+          "table_name": "temp_remove_rka_21",
+          "json_file": "struktur/temp_remove_rka_21.json"
+        },
+        {
+          "table_name": "temp_remove_rka_31",
+          "json_file": "struktur/temp_remove_rka_31.json"
+        },
+        {
+          "table_name": "temp_remove_rka_32",
+          "json_file": "struktur/temp_remove_rka_32.json"
+        },
+        {
+          "table_name": "temp_rincian_belanja_langsung",
+          "json_file": "struktur/temp_rincian_belanja_langsung.json"
+        },
+        {
+          "table_name": "temp_rincian_belanja_tidak_langsung",
+          "json_file": "struktur/temp_rincian_belanja_tidak_langsung.json"
+        },
+        {
+          "table_name": "temp_sub_rincian_belanja_langsung",
+          "json_file": "struktur/temp_sub_rincian_belanja_langsung.json"
+        },
+        {
+          "table_name": "temp_sub_rincian_belanja_tidak_langsung",
+          "json_file": "struktur/temp_sub_rincian_belanja_tidak_langsung.json"
+        },
+        {
+          "table_name": "temp_sub_rincian_pindapatan_pad",
+          "json_file": "struktur/temp_sub_rincian_pindapatan_pad.json"
+        },
+        {
+          "table_name": "temp_sub_rincian_pindapatan_dp",
+          "json_file": "struktur/temp_sub_rincian_pindapatan_dp.json"
+        },
+        {
+          "table_name": "temp_sub_rincian_pindapatan_lp",
+          "json_file": "struktur/temp_sub_rincian_pindapatan_lp.json"
+        },
+        {
+          "table_name": "view_rekap_dpa",
+          "json_file": "view/view_rekap_dpa.json"
+        },
+        {
+          "table_name": "view_rekap_rka",
+          "json_file": "view/view_rekap_rka.json"
+        },
+        {
+          "table_name": "view_rekap_program_kegiatan_dpa",
+          "json_file": "view/view_rekap_program_kegiatan_dpa.json"
+        },
+        {
+          "table_name": "view_rekap_program_kegiatan_rka",
+          "json_file": "view/view_rekap_program_kegiatan_rka.json"
+        },
+        {
+          "table_name": "plafon_anggaran",
+          "json_file": "struktur/plafon_anggaran.json"
+        },
+        {
+          "table_name": "detail_renja",
+          "json_file": "struktur/detail_renja.json"
+        },
+        {
+          "table_name": "ref_modul",
+          "json_file": "struktur/ref_modul.json",
+        },
+        {
+          "table_name": "setting",
+          "json_file": "struktur/setting.json",
+        }
+    ],
+    "views": [
+        {
+          "table_name": "view_anggaran_kas_221",
+          "json_file": "view/view_anggaran_kas_221.json"
+        }
+    ],
+    "triggers": [
+        {
+          "trigger_name": "anggaran_kas_bef_ins",
+          "json_file": "trigger/anggaran_kas_bef_ins.json"
+        },
+        {
+          "trigger_name": "anggaran_kas_bef_upd",
+          "json_file": "trigger/anggaran_kas_bef_upd.json"
+        }
+    ],
+    "routines": [
+        {
+          "routine_name": "get_bi_rincian",
+          "json_file": "routine/get_bi_rincian.json"
+        },
+        {
+          "routine_name": "get_nilai_buku",
+          "json_file": "routine/get_nilai_buku.json"
+        },
+        {
+          "routine_name": "example_procedure",
+          "json_file": "routine/example_procedure.json"
+        }
+    ]
+}]

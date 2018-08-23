@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_spp_dokumen",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_spp_dokumen` AS select `rkd`.`jns` AS `jns`,`rkd`.`Id` AS `Id`,`rkd`.`syarat` AS `syarat`,`tsk`.`status_spp` AS `status_spp`,`tsk`.`refid_kelengkapan_dok` AS `refid_kelengkapan_dok`,`tsk`.`refid_spp` AS `refid_spp`,`tsk`.`Id` AS `IdSpp_kelengkapan` from (`ref_kelengkapan_dokumen` `rkd` left join `t_spp_kelengkapan_dok` `tsk` on((`tsk`.`refid_kelengkapan_dok` = `rkd`.`Id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_kibc_status",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_kibc_status` AS select `aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`thn_perolehan` AS `thn_perolehan`,`aa`.`noreg` AS `noreg`,`aa`.`koordinat_gps` AS `koordinat_gps`,`aa`.`koord_bidang` AS `koord_bidang`,`bb`.`tgl_sensus` AS `tgl_sensus`,`bb`.`jmlgbr` AS `jmlgbr`,concat(if((`aa`.`koordinat_gps` <> ''),'1','0'),if((`aa`.`koord_bidang` <> ''),'1','0'),if((isnull(`bb`.`tgl_sensus`) or (`bb`.`tgl_sensus` = '0000-00-00')),'0','1'),if((`bb`.`jmlgbr` > 0),'1','0')) AS `st` from (`v_kibc_koord` `aa` left join `v_kibc_jmlgbr` `bb` on(((`aa`.`a1` = `bb`.`a1`) and (`aa`.`a` = `bb`.`a`) and (`aa`.`b` = `bb`.`b`) and (`aa`.`c` = `bb`.`c`) and (`aa`.`d` = `bb`.`d`) and (`aa`.`e` = `bb`.`e`) and (`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`i` = `bb`.`i`) and (`aa`.`j` = `bb`.`j`) and (`aa`.`thn_perolehan` = `bb`.`thn_perolehan`) and (`aa`.`noreg` = `bb`.`noreg`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

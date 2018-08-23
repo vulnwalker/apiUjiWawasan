@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_spp_rekening",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_spp_rekening` AS select `a`.`Id` AS `Id`,`a`.`c1` AS `c1`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`bk` AS `bk`,`a`.`ck` AS `ck`,`a`.`dk` AS `dk`,`a`.`p` AS `p`,`a`.`q` AS `q`,`a`.`k` AS `k`,`a`.`l` AS `l`,`a`.`m` AS `m`,`a`.`n` AS `n`,`a`.`o` AS `o`,`a`.`jumlah` AS `jumlah`,`a`.`refid_terima` AS `refid_terima`,`a`.`refid_terima_det` AS `refid_terima_det`,`a`.`refid_spp` AS `refid_spp`,`a`.`refid_nomor_spd` AS `refid_nomor_spd`,`a`.`refid_nomor_spd_det` AS `refid_nomor_spd_det`,`a`.`tahun` AS `tahun`,`a`.`uid` AS `uid`,`a`.`uid_create` AS `uid_create`,`a`.`tgl_create` AS `tgl_create`,`a`.`tgl_update` AS `tgl_update`,`a`.`status` AS `status`,`a`.`sttemp` AS `sttemp`,`a`.`nm_rekening` AS `nm_rekening1`,`a`.`nm_program` AS `nm_program1`,`a`.`nm_kegiatan` AS `nm_kegiatan1`,`b`.`nm_rekening` AS `nm_rekening`,`b`.`nm_kegiatan` AS `nm_kegiatan`,`b`.`total` AS `total_spd`,`b`.`sisa_total` AS `sisa_total` from (`v1_spp_rek` `a` left join `v1_nomor_spd_det` `b` on(((`a`.`refid_nomor_spd` = `b`.`refid_nomor_spd`) and (`a`.`refid_nomor_spd_det` = `b`.`Id`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

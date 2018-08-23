@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_masterbarangpengadaan_persediaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_masterbarangpengadaan_persediaan` AS select `aa`.`Id` AS `Id`,`aa`.`ref_id_dkbp` AS `ref_id_dkbp`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`tahun_anggaran` AS `tahun_anggaran`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`jml_pengadaan` AS `jml_pengadaan`,`aa`.`satuan` AS `satuan`,`aa`.`harga_satuan` AS `harga_satuan`,`aa`.`tgl_spk` AS `tgl_spk`,`aa`.`nomor_spk` AS `nomor_spk`,`aa`.`suplier_spk` AS `suplier_spk`,`aa`.`tgl_sp2d` AS `tgl_sp2d`,`aa`.`nomor_sp2d` AS `nomor_sp2d`,`aa`.`id_pejabat_pengadaan` AS `id_pejabat_pengadaan`,`aa`.`id_pejabat_pembuat_komitmen` AS `id_pejabat_pembuat_komitmen`,`aa`.`keterangan` AS `keterangan`,`bb`.`nama_barang` AS `nama_barang` from (`pengadaan_persediaan` `aa` left join `ref_barang_persediaan` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`))))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

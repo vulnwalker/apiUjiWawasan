@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_transaksi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_transaksi` AS select 1 AS `id_jns`,'inventaris' AS `nm_jenis` union select 2 AS `id_jns`,'pemeliharaan' AS `nm_jenis` union select 3 AS `id_jns`,'pengamanan' AS `nm_jenis` union select 4 AS `id_jns`,'hapus sebagian' AS `nm_jenis` union select 5 AS `id_jns`,'mutasi' AS `nm_jenis` union select 6 AS `id_jns`,'reclass' AS `nm_jenis` union select 7 AS `id_jns`,'pemanfaatan' AS `nm_jenis` union select 8 AS `id_jns`,'pemusnahan' AS `nm_jenis` union select 9 AS `id_jns`,'pemindahtanganan' AS `nm_jenis` union select 10 AS `id_jns`,'tuntutan ganti rugi' AS `nm_jenis`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

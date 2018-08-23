@@ -1,0 +1,7 @@
+pages/pengadaanpenerimaan/pemasukan_ins.php
+pages/pengadaanpenerimaan/pemasukan_atribusi.php
+pages/pengadaanpenerimaan/pemasukan.php
+pages/pengadaanpenerimaan/pemasukan_ins_det.php
+pages/pencarian/cariDPA.php
+js/pengadaanpenerimaan/pemasukan_atribusi.js
+js/pengadaanpenerimaan/pemasukan_ins.js

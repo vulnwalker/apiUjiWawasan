@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_cek_penghapusan_cnt",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cek_penghapusan_cnt` AS select `v_penghapusan_bi`.`a1` AS `a1`,`v_penghapusan_bi`.`a` AS `a`,`v_penghapusan_bi`.`b` AS `b`,`v_penghapusan_bi`.`c` AS `c`,`v_penghapusan_bi`.`d` AS `d`,`v_penghapusan_bi`.`e` AS `e`,`v_penghapusan_bi`.`f` AS `f`,`v_penghapusan_bi`.`g` AS `g`,`v_penghapusan_bi`.`h` AS `h`,`v_penghapusan_bi`.`i` AS `i`,`v_penghapusan_bi`.`j` AS `j`,`v_penghapusan_bi`.`tahun` AS `tahun`,`v_penghapusan_bi`.`noreg` AS `noreg`,`v_penghapusan_bi`.`id_bukuinduk` AS `id_bukuinduk`,count(0) AS `cnt` from `v_penghapusan_bi` where ((`v_penghapusan_bi`.`f` = '02') and (`v_penghapusan_bi`.`status_barang` = 3)) group by `v_penghapusan_bi`.`a1`,`v_penghapusan_bi`.`a`,`v_penghapusan_bi`.`b`,`v_penghapusan_bi`.`c`,`v_penghapusan_bi`.`d`,`v_penghapusan_bi`.`e`,`v_penghapusan_bi`.`f`,`v_penghapusan_bi`.`g`,`v_penghapusan_bi`.`h`,`v_penghapusan_bi`.`i`,`v_penghapusan_bi`.`j`,`v_penghapusan_bi`.`tahun`,`v_penghapusan_bi`.`noreg`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

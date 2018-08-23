@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_penghapusan_usulsk_det",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_penghapusan_usulsk_det` AS select `aa`.`Id` AS `Id`,`aa`.`sesi` AS `sesi`,`aa`.`ref_idusulan` AS `ref_idusulan`,`bb`.`no_usulan` AS `no_usulan`,`bb`.`tgl_usul` AS `tgl_usul`,`bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`e1` AS `e1`,`bb`.`no_ba` AS `no_ba`,`bb`.`tgl_ba` AS `tgl_ba`,`bb`.`ref_idpegawai_usul` AS `ref_idpegawai_usul`,`bb`.`ref_idpegawai_ba` AS `ref_idpegawai_ba`,`bb`.`ref_idpegawai_usul2` AS `ref_idpegawai_usul2` from (`penghapusan_usulsk_det` `aa` left join `penghapusan_usul` `bb` on((`aa`.`ref_idusulan` = `bb`.`Id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

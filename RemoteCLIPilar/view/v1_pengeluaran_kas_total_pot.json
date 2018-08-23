@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_pengeluaran_kas_total_pot",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_pengeluaran_kas_total_pot` AS select `t_pengeluaran_kas_pot`.`refid` AS `refid`,ifnull(sum(`t_pengeluaran_kas_pot`.`jumlah`),0) AS `total` from `t_pengeluaran_kas_pot` where (`t_pengeluaran_kas_pot`.`sttemp` = '0') group by `t_pengeluaran_kas_pot`.`refid`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

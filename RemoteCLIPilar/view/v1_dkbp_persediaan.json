@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_dkbp_persediaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_dkbp_persediaan` AS select `aa`.`Id` AS `Id`,`aa`.`ref_idrencana` AS `ref_idrencana`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`tahun_anggaran` AS `tahun_anggaran`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`jml_rencana` AS `jml_rencana`,`aa`.`jml_disetujui` AS `jml_disetujui`,`aa`.`satuan` AS `satuan`,`aa`.`harga_rencana` AS `harga_rencana`,`aa`.`harga_dkbp` AS `harga_dkbp`,`aa`.`keterangan` AS `keterangan`,`aa`.`k` AS `k`,`aa`.`l` AS `l`,`aa`.`m` AS `m`,`aa`.`n` AS `n`,`aa`.`o` AS `o`,`aa`.`ref_idkegiatan` AS `ref_idkegiatan`,`bb`.`nama_barang` AS `nama_barang`,`cc`.`nama_merk` AS `nama_merk`,`dd`.`nama_satuan` AS `nama_satuan`,`aa`.`merk` AS `merk`,`aa`.`type` AS `type`,`aa`.`spesifikasi` AS `spesifikasi` from (((`dkbp_persediaan` `aa` left join `ref_barang_persediaan` `bb` on(((`aa`.`g` = `bb`.`g`) and (`aa`.`f` = `bb`.`f`)))) left join `ref_merk_persediaan` `cc` on((`aa`.`h` = `cc`.`h`))) left join `ref_satuan_persediaan` `dd` on((`aa`.`satuan` = `dd`.`Id`)))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

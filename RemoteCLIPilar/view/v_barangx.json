@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_barangx",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_barangx` AS select '00' AS `f`,'00' AS `x`,'' AS `nm_barang` union all select `ref_barang`.`f` AS `f`,'00' AS `x`,`ref_barang`.`nm_barang` AS `nm_barang` from `ref_barang` where (`ref_barang`.`g` = '00')",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

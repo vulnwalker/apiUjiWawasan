@@ -1,0 +1,4 @@
+DELIMITER ;; 
+ CREATE PROCEDURE `example_procedure` (tes tinyint(2) )  
+BEGIN
+end;;

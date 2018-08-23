@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "view_rkb",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_rkb` AS select `aa`.`id` AS `id`,`aa`.`merk_barang` AS `merk_barang`,`aa`.`jml_barang` AS `jml_barang`,`aa`.`harga` AS `harga`,`aa`.`satuan` AS `satuan`,`aa`.`jml_harga` AS `jml_harga`,`aa`.`ket` AS `ket`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`k` AS `k`,`aa`.`l` AS `l`,`aa`.`m` AS `m`,`aa`.`n` AS `n`,`aa`.`o` AS `o`,`aa`.`tahun` AS `tahun`,`bb`.`nm_wilayah` AS `nm_wilayah`,`cc`.`nm_skpd` AS `nm_skpd`,`dd`.`nm_barang` AS `nm_barang`,`aa`.`e1` AS `e1` from (((`rkb` `aa` join `ref_wilayah` `bb` on(((`aa`.`a` = `bb`.`a`) and (`aa`.`b` = `bb`.`b`)))) join `ref_skpd` `cc` on(((`aa`.`c` = `cc`.`c`) and (`aa`.`d` = `cc`.`d`) and (`aa`.`e` = `cc`.`e`) and (`aa`.`e1` = `cc`.`e1`)))) join `ref_barang` `dd` on(((`aa`.`f` = `dd`.`f`) and (`aa`.`g` = `dd`.`g`) and (`aa`.`h` = `dd`.`h`) and (`aa`.`i` = `dd`.`i`) and (`aa`.`j` = `dd`.`j`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

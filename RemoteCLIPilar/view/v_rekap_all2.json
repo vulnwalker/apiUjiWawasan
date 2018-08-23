@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_rekap_all2",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_rekap_all2` AS select `r`.`c` AS `c`,`r`.`d` AS `d`,`r`.`e` AS `e`,`r`.`nm_skpd` AS `nm_skpd`,`a1`.`jmlbi` AS `jml`,`a1`.`jmlkiba` AS `jmlkiba`,`a1`.`jmlkibb` AS `jmlkibb`,`a1`.`jmlkibc` AS `jmlkibc`,`a1`.`jmlkibd` AS `jmlkibd`,`a1`.`jmlkibe` AS `jmlkibe`,`a1`.`jmlkibf` AS `jmlkibf`,`a1`.`jmlbrgbi` AS `jmlbrgbi`,`a1`.`jmlbrgkiba` AS `jmlbrgkiba`,`a1`.`jmlbrgkibb` AS `jmlbrgkibb`,`a1`.`jmlbrgkibc` AS `jmlbrgkibc`,`a1`.`jmlbrgkibd` AS `jmlbrgkibd`,`a1`.`jmlbrgkibe` AS `jmlbrgkibe`,`a1`.`jmlbrgkibf` AS `jmlbrgkibf` from (`ref_skpd` `r` left join `v_rekap_all` `a1` on(((`r`.`c` = `a1`.`c`) and (`r`.`d` = `a1`.`d`) and (`r`.`e` = `a1`.`e`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_unit",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_unit` AS select `aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`nm_skpd` AS `nmunit` from `ref_skpd` `aa` where ((`aa`.`c` <> '00') and (`aa`.`d` <> '00') and (`aa`.`e` <> '00') and ((`aa`.`e1` = '000') or (`aa`.`e1` = '00')))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

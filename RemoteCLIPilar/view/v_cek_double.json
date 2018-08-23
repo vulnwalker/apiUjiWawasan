@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_cek_double",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cek_double` AS select `v_cek_bicnt`.`idbrg` AS `idbrg`,`v_cek_bicnt`.`a1` AS `a1`,`v_cek_bicnt`.`a` AS `a`,`v_cek_bicnt`.`b` AS `b`,`v_cek_bicnt`.`c` AS `c`,`v_cek_bicnt`.`d` AS `d`,`v_cek_bicnt`.`e` AS `e`,`v_cek_bicnt`.`f` AS `f`,`v_cek_bicnt`.`g` AS `g`,`v_cek_bicnt`.`h` AS `h`,`v_cek_bicnt`.`i` AS `i`,`v_cek_bicnt`.`j` AS `j`,`v_cek_bicnt`.`tahun` AS `tahun`,`v_cek_bicnt`.`noreg` AS `noreg`,`v_cek_bicnt`.`cnt` AS `cnt` from `v_cek_bicnt` where (`v_cek_bicnt`.`cnt` > 1)",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

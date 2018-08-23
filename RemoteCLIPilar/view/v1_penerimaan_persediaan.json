@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_penerimaan_persediaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_penerimaan_persediaan` AS select `bb`.`nama_barang` AS `nama_barang`,`aa`.`Id` AS `Id`,`aa`.`sttemp` AS `sttemp`,`aa`.`ref_idpengadaan` AS `ref_idpengadaan`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`tahun_anggaran` AS `tahun_anggaran`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`suplier` AS `suplier`,`aa`.`tgl_faktur` AS `tgl_faktur`,`aa`.`no_faktur` AS `no_faktur`,`aa`.`jml_pengadaan` AS `jml_pengadaan`,`aa`.`jml_penerimaan` AS `jml_penerimaan`,`aa`.`satuan` AS `satuan`,`aa`.`harga_satuan` AS `harga_satuan`,`aa`.`tgl_terima` AS `tgl_terima`,`aa`.`idpetugas_penerima` AS `idpetugas_penerima`,`aa`.`idgudang` AS `idgudang`,`aa`.`idpetugas_penyimpan` AS `idpetugas_penyimpan`,`aa`.`tgl_bap` AS `tgl_bap`,`aa`.`no_bap` AS `no_bap`,`aa`.`idpetugas_pemeriksa` AS `idpetugas_pemeriksa`,`aa`.`keterangan` AS `keterangan`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`merk` AS `merk`,`aa`.`type` AS `type`,`aa`.`spesifikasi` AS `spesifikasi` from (`penerimaan_persediaan` `aa` left join `ref_barang_persediaan` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`))))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_rekap_kibb",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_rekap_kibb` AS select `buku_induk`.`c` AS `c`,`buku_induk`.`d` AS `d`,`buku_induk`.`e` AS `e`,`buku_induk`.`f` AS `f`,sum(`buku_induk`.`harga`) AS `jml`,count(`buku_induk`.`id`) AS `jmlbrg` from `buku_induk` where ((`buku_induk`.`f` = '02') and (`buku_induk`.`status_barang` <> 3)) group by `buku_induk`.`c`,`buku_induk`.`d`,`buku_induk`.`e`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

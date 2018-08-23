@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_spp_total_potongan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_spp_total_potongan` AS select `t_spp_potongan`.`refid_spp` AS `refid_spp`,ifnull(sum(`t_spp_potongan`.`jumlah`),0) AS `total_jumlah` from `t_spp_potongan` where (`t_spp_potongan`.`sttemp` = '0') group by `t_spp_potongan`.`refid_spp`",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

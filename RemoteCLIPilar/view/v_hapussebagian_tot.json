@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_hapussebagian_tot",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_hapussebagian_tot` AS select `aa`.`idbi_awal` AS `idbi_awal`,sum(`aa`.`harga_hapus`) AS `tot_hapussebagian` from `penghapusan_sebagian` `aa` group by `aa`.`idbi_awal`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

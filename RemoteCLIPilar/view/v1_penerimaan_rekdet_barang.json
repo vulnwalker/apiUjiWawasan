@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_penerimaan_rekdet_barang",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_penerimaan_rekdet_barang` AS select `b`.`nm_barang` AS `nm_barang`,`a`.`refid_dpa` AS `refid_dpa`,`a`.`refid_rek` AS `refid_rek`,`a`.`refid_terima` AS `refid_terima`,`a`.`jml` AS `jml` from (`t_penerimaan_rekening_det` `a` left join `ref_barang` `b` on(((`b`.`f1` = `a`.`f1`) and (`b`.`f2` = `a`.`f2`) and (`b`.`f` = `a`.`f`) and (`b`.`g` = `a`.`g`) and (`b`.`h` = `a`.`h`) and (`b`.`i` = `a`.`i`) and (`b`.`j` = `a`.`j`) and (`b`.`j1` = `a`.`j1`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

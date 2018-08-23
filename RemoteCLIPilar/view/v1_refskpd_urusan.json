@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_refskpd_urusan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_refskpd_urusan` AS select `aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`nm_skpd` AS `nm_skpd`,`bb`.`bk` AS `bk`,`bb`.`ck` AS `ck`,`bb`.`dk` AS `dk`,`cc`.`nm_urusan` AS `nm_urusan` from ((`ref_skpd` `aa` left join `ref_skpd_urusan` `bb` on(((`aa`.`c` = `bb`.`c`) and (`aa`.`d` = `bb`.`d`)))) left join `ref_urusan` `cc` on(((`bb`.`bk` = `cc`.`bk`) and (`bb`.`ck` = `cc`.`ck`) and (`bb`.`dk` = `cc`.`dk`)))) where ((`aa`.`c` <> '00') and (`aa`.`d` <> '00') and (`aa`.`e` = '00'))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

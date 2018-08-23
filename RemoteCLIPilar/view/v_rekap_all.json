@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_rekap_all",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_rekap_all` AS select `a1`.`c` AS `c`,`a1`.`d` AS `d`,`a1`.`e` AS `e`,`a1`.`jml` AS `jmlbi`,`a`.`jml` AS `jmlkiba`,`b`.`jml` AS `jmlkibb`,`c`.`jml` AS `jmlkibc`,`d`.`jml` AS `jmlkibd`,`e`.`jml` AS `jmlkibe`,`f`.`jml` AS `jmlkibf`,`a1`.`jmlbrg` AS `jmlbrgbi`,`a`.`jmlbrg` AS `jmlbrgkiba`,`b`.`jmlbrg` AS `jmlbrgkibb`,`c`.`jmlbrg` AS `jmlbrgkibc`,`d`.`jmlbrg` AS `jmlbrgkibd`,`e`.`jmlbrg` AS `jmlbrgkibe`,`f`.`jmlbrg` AS `jmlbrgkibf` from ((((((`v_rekap_bi` `a1` left join `v_rekap_kiba` `a` on(((`a1`.`c` = `a`.`c`) and (`a1`.`d` = `a`.`d`) and (`a1`.`e` = `a`.`e`)))) left join `v_rekap_kibb` `b` on(((`a1`.`c` = `b`.`c`) and (`a1`.`d` = `b`.`d`) and (`a1`.`e` = `b`.`e`)))) left join `v_rekap_kibc` `c` on(((`a1`.`c` = `c`.`c`) and (`a1`.`d` = `c`.`d`) and (`a1`.`e` = `c`.`e`)))) left join `v_rekap_kibd` `d` on(((`a1`.`c` = `d`.`c`) and (`a1`.`d` = `d`.`d`) and (`a1`.`e` = `d`.`e`)))) left join `v_rekap_kibe` `e` on(((`a1`.`c` = `e`.`c`) and (`a1`.`d` = `e`.`d`) and (`a1`.`e` = `e`.`e`)))) left join `v_rekap_kibf` `f` on(((`a1`.`c` = `f`.`c`) and (`a1`.`d` = `f`.`d`) and (`a1`.`e` = `f`.`e`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

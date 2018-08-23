@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_asetlainlain",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_asetlainlain` AS select `aa`.`Id` AS `Id`,`aa`.`tgl` AS `tgl`,`aa`.`idbi` AS `idbi`,`aa`.`uid` AS `uid`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`staset` AS `staset`,`aa`.`staset_baru` AS `staset_baru`,`aa`.`ket` AS `ket`,`bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`e1` AS `e1`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`noreg` AS `noreg`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`jml_barang` AS `jml_barang`,`bb`.`satuan` AS `satuan`,`bb`.`harga` AS `harga`,`bb`.`jml_harga` AS `jml_harga`,`bb`.`asal_usul` AS `asal_usul`,`bb`.`status_barang` AS `status_barang`,`bb`.`tgl_buku` AS `tgl_buku`,`aa`.`kondisi` AS `kondisi`,`aa`.`kondisi_baru` AS `kondisi_baru`,`aa`.`idbi_awal` AS `idbi_awal`,`aa`.`nilai_buku` AS `nilai_buku`,`aa`.`nilai_susut` AS `nilai_susut`,`bb`.`c1` AS `c1`,`bb`.`f1` AS `f1`,`bb`.`f2` AS `f2` from (`t_asetlainlain` `aa` left join `buku_induk` `bb` on((`aa`.`idbi` = `bb`.`id`)))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

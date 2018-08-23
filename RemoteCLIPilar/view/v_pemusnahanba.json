@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pemusnahanba",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pemusnahanba` AS select `aa`.`id` AS `id`,`aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`no_ba` AS `no_ba`,`aa`.`tgl_ba` AS `tgl_ba`,`aa`.`tgl_buku` AS `tgl_buku`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`uid` AS `uid`,`aa`.`sttemp` AS `sttemp`,`aa`.`ket` AS `ket`,`aa`.`cara_pemusnahan` AS `cara_pemusnahan`,`aa`.`penganggungjawab` AS `penganggungjawab`,`aa`.`thn_anggaran` AS `thn_anggaran`,sum(`bb`.`jumlah_harga`) AS `jml_harga`,count(`aa`.`id`) AS `jml_barang` from (`pemusnahan` `aa` left join `pemusnahan_det` `bb` on((`aa`.`id` = `bb`.`refid_pemusnahan`))) group by `aa`.`id`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_skpd_kib",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_skpd_kib` AS select `aa`.`c` AS `c`,`aa`.`d` AS `d`,`bb`.`f` AS `f`,`aa`.`nm_skpd` AS `nm_skpd`,`bb`.`nm_barang` AS `nm_barang` from (`ref_skpd` `aa` left join `v_barangx` `bb` on((`bb`.`x` = '00'))) where ((`aa`.`e` = '00') and (`aa`.`d` <> 0))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

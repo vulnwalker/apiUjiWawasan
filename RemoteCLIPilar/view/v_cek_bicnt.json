@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_cek_bicnt",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cek_bicnt` AS select concat(`buku_induk`.`a1`,`buku_induk`.`a`,`buku_induk`.`b`,`buku_induk`.`c`,`buku_induk`.`d`,`buku_induk`.`e`,`buku_induk`.`f`,`buku_induk`.`g`,`buku_induk`.`h`,`buku_induk`.`i`,`buku_induk`.`j`,`buku_induk`.`tahun`,`buku_induk`.`noreg`) AS `idbrg`,`buku_induk`.`a1` AS `a1`,`buku_induk`.`a` AS `a`,`buku_induk`.`b` AS `b`,`buku_induk`.`c` AS `c`,`buku_induk`.`d` AS `d`,`buku_induk`.`e` AS `e`,`buku_induk`.`f` AS `f`,`buku_induk`.`g` AS `g`,`buku_induk`.`h` AS `h`,`buku_induk`.`i` AS `i`,`buku_induk`.`j` AS `j`,`buku_induk`.`tahun` AS `tahun`,`buku_induk`.`noreg` AS `noreg`,count(`buku_induk`.`id`) AS `cnt` from `buku_induk` group by `buku_induk`.`a1`,`buku_induk`.`a`,`buku_induk`.`b`,`buku_induk`.`c`,`buku_induk`.`d`,`buku_induk`.`e`,`buku_induk`.`f`,`buku_induk`.`g`,`buku_induk`.`h`,`buku_induk`.`i`,`buku_induk`.`j`,`buku_induk`.`tahun`,`buku_induk`.`noreg` order by `buku_induk`.`a1`,`buku_induk`.`a`,`buku_induk`.`b`,`buku_induk`.`c`,`buku_induk`.`d`,`buku_induk`.`e`,`buku_induk`.`f`,`buku_induk`.`g`,`buku_induk`.`h`,`buku_induk`.`i`,`buku_induk`.`j`,`buku_induk`.`tahun`,`buku_induk`.`noreg`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

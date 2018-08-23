@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_rkb",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_rkb` AS select `aa`.`id` AS `id`,`aa`.`merk_barang` AS `merk_barang`,`aa`.`jml_barang` AS `jml_barang`,`aa`.`harga` AS `harga`,`aa`.`satuan` AS `satuan`,`aa`.`jml_harga` AS `jml_harga`,`aa`.`ket` AS `ket`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`k` AS `k`,`aa`.`l` AS `l`,`aa`.`m` AS `m`,`aa`.`n` AS `n`,`aa`.`o` AS `o`,`aa`.`tahun` AS `tahun`,`aa`.`stat` AS `stat`,`aa`.`jml_bi` AS `jml_bi`,`aa`.`jml_standar` AS `jml_standar`,`bb`.`nm_barang` AS `nm_barang`,`cc`.`nm_rekening` AS `nm_rekening` from ((`rkb` `aa` left join `ref_barang` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`j` = `bb`.`j`) and (`aa`.`i` = `bb`.`i`)))) left join `ref_rekening` `cc` on(((`aa`.`k` = `cc`.`k`) and (`aa`.`l` = `cc`.`l`) and (`aa`.`m` = `cc`.`m`) and (`aa`.`n` = `cc`.`n`) and (`aa`.`o` = `cc`.`o`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

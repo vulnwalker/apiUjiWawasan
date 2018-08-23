@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_double2",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_double2` AS select `v_double`.`id` AS `id`,`v_double`.`cid` AS `cid` from `v_double` where (`v_double`.`cid` > 1)",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

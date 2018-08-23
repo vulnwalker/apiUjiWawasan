@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_atribusi_rincian",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_atribusi_rincian` AS select `tar`.`Id` AS `Id`,`tar`.`k` AS `k`,`tar`.`l` AS `l`,`tar`.`m` AS `m`,`tar`.`n` AS `n`,`tar`.`o` AS `o`,`tar`.`uraian` AS `uraian`,`tar`.`jumlah` AS `jumlah`,`tar`.`satuan` AS `satuan`,`tar`.`harga_satuan` AS `harga_satuan`,`tar`.`jml_harga` AS `jml_harga`,`tar`.`keterangan` AS `keterangan`,`tar`.`refid_atribusi` AS `refid_atribusi`,`tar`.`refid_terima` AS `refid_terima`,`tar`.`tahun` AS `tahun`,`tar`.`uid` AS `uid`,`tar`.`tgl_create` AS `tgl_create`,`tar`.`uid_create` AS `uid_create`,`tar`.`tgl_update` AS `tgl_update`,`tar`.`status` AS `status`,`tar`.`sttemp` AS `sttemp`,`tar`.`refid_dokumen_atribusi` AS `refid_dokumen_atribusi`,`tad`.`jns_dok` AS `jns_dok`,`tad`.`tanggal_dok` AS `tanggal_dok`,`tad`.`nomor_dok` AS `nomor_dok`,`tar`.`sttemp` AS `tar_sttemp`,`tad`.`sttemp` AS `tad_sttemp` from (`t_atribusi_rincian` `tar` left join `t_atribusi_dokumen` `tad` on((`tar`.`refid_dokumen_atribusi` = `tad`.`Id`))) where (`tad`.`status` <> '2')",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

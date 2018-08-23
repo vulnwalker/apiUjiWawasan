@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "view_barang_rkbmd_pemeliharaan_v3",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_barang_rkbmd_pemeliharaan_v3` AS select `buku_induk`.`id` AS `Id`,`buku_induk`.`c1` AS `c1`,`buku_induk`.`c` AS `c`,`buku_induk`.`d` AS `d`,`buku_induk`.`e` AS `e`,`buku_induk`.`e1` AS `e1`,`buku_induk`.`f1` AS `f1`,`buku_induk`.`f2` AS `f2`,`buku_induk`.`f` AS `f`,`buku_induk`.`g` AS `g`,`buku_induk`.`h` AS `h`,`buku_induk`.`i` AS `i`,`buku_induk`.`j` AS `j`,`ref_barang`.`nm_barang` AS `nm_barang`,`buku_induk`.`jml_barang` AS `jml_barang`,`buku_induk`.`kondisi` AS `kondisi`,`buku_induk`.`status_barang` AS `status_barang`,`ref_barang`.`satuan` AS `satuan` from (`buku_induk` join `ref_barang` on(((`buku_induk`.`f1` = `ref_barang`.`f1`) and (`buku_induk`.`f2` = `ref_barang`.`f2`) and (`buku_induk`.`f` = `ref_barang`.`f`) and (`buku_induk`.`g` = `ref_barang`.`g`) and (`buku_induk`.`h` = `ref_barang`.`h`) and (`buku_induk`.`i` = `ref_barang`.`i`) and (`buku_induk`.`j` = `ref_barang`.`j`)))) where ((`buku_induk`.`j` <> 0) and (`buku_induk`.`status_barang` = 1)) order by concat(`buku_induk`.`f1`,`buku_induk`.`f2`,`buku_induk`.`f`,`buku_induk`.`g`,`buku_induk`.`h`,`buku_induk`.`i`,`buku_induk`.`j`)",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

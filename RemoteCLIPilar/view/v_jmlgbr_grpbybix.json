@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_jmlgbr_grpbybix",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_jmlgbr_grpbybix` AS select `gambar`.`idbi` AS `idbi`,count(0) AS `cnt` from `gambar` group by `gambar`.`idbi`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

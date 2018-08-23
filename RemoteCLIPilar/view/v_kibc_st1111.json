@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_kibc_st1111",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_kibc_st1111` AS select `v_kibc_status`.`c` AS `c`,`v_kibc_status`.`d` AS `d`,`v_kibc_status`.`e` AS `e`,count(`v_kibc_status`.`st`) AS `jml` from `v_kibc_status` where (`v_kibc_status`.`st` = '1111') group by `v_kibc_status`.`c`,`v_kibc_status`.`d`,`v_kibc_status`.`e`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

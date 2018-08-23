@@ -1,0 +1,8 @@
+[{
+    "APP_NAME": "ATISISBADA 2018",
+    "ROOT_DIR": "/var/www/atisisbada_2018/",
+    "START_FROM_DATE": "2018-08-15",
+    "UNTIL_DATE": "2018-08-15",
+    "SSH_KEY": "kantor",
+    "FILES": "listupdate.txt"
+}]

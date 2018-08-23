@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_cek_idlamabukanmutasi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cek_idlamabukanmutasi` AS select `aa`.`id_lama` AS `id_lama`,`aa`.`cnt` AS `cnt`,`bb`.`id` AS `id`,`bb`.`status_barang` AS `status_barang` from (`v_cek_idlama` `aa` left join `buku_induk` `bb` on((`aa`.`id_lama` = `bb`.`id`))) where ((`bb`.`status_barang` <> 3) or isnull(`bb`.`id`))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

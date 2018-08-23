@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_penyusutan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_penyusutan` AS select `ref_barang`.`f` AS `f`,`ref_barang`.`h` AS `h`,`ref_barang`.`g` AS `g`,`ref_barang`.`i` AS `i`,`ref_barang`.`j` AS `j`,`ref_barang`.`nm_barang` AS `nm_barang`,`ref_penyusutan`.`masa_manfaat` AS `masa_manfaat`,`ref_penyusutan`.`residu` AS `residu`,`ref_penyusutan`.`tahun` AS `tahun` from (`ref_barang` left join `ref_penyusutan` on(((`ref_barang`.`f` = `ref_penyusutan`.`f`) and (`ref_barang`.`g` = `ref_penyusutan`.`g`) and (`ref_barang`.`h` = `ref_penyusutan`.`h`) and (`ref_barang`.`i` = `ref_penyusutan`.`i`) and (`ref_barang`.`j` = `ref_penyusutan`.`j`) and (`ref_barang`.`nm_barang` = `ref_penyusutan`.`nm_barang`))))",
+    "CHARSET": "utf8mb4",
+    "COLLATION": "utf8mb4_general_ci"
+}

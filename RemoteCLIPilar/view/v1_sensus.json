@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_sensus",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_sensus` AS select `aa`.`Id` AS `Id`,`aa`.`tgl` AS `tgl`,`aa`.`idbi` AS `idbi`,`aa`.`kondisi` AS `kondisi`,`aa`.`uid` AS `uid`,`bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`noreg` AS `noreg`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`satuan` AS `satuan`,`bb`.`harga` AS `harga`,`bb`.`jml_harga` AS `jml_harga`,`bb`.`jml_barang` AS `jml_barang`,`bb`.`asal_usul` AS `asal_usul`,`bb`.`status_barang` AS `status_barang`,`bb`.`tahun` AS `tahun` from (`sensus` `aa` left join `buku_induk` `bb` on((`aa`.`idbi` = `bb`.`id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

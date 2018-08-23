@@ -1,0 +1,61 @@
+{
+    "tableName": "berita",
+    "dumpFile": "dump\/berita.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "judul",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "gambar",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "deskripsi",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "tanggal",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO berita (id,judul,gambar,deskripsi,tanggal) values ('1','Hadiah Bulan September','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/berita\/d41d8cd98f00b204e9800998ecf8427e.jpg','Hadiah akan diberikan kepada akun\/user dengan peringkat 1, 2 dan 3\r\nPeringkat 1 : Smartwatch  (*ongkir ditanggung Uji Wawasan)\r\nPeringkat 2 : Voucher pulsa senilai Rp.50.000\r\nPeringkat 3 : Voucher pulsa senilai Rp.20.000','2018-08-17') "
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_double",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_double` AS select `buku_induk`.`id` AS `id`,count(`buku_induk`.`id`) AS `cid` from `buku_induk` group by `buku_induk`.`id`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

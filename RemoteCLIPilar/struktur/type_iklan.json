@@ -1,0 +1,108 @@
+{
+    "tableName": "type_iklan",
+    "dumpFile": "dump\/type_iklan.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "jenis_iklan",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "energi",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "delay",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "ad_unit",
+            "COLUMN_TYPE": "text",
+            "CHARACTER_SET_NAME": "latin1",
+            "COLLATION_NAME": "latin1_swedish_ci",
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('1','BANNER','100','5','ca-app-pub-8479837945864676\/5792440820') ",
+        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('3','VIDEO','100,500','10','ca-app-pub-4476830950169301\/9067200768\r\n') ",
+        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('4','POPUP','','0','ca-app-pub-4476830950169301\/9067200768\r\n') "
+    ]
+}

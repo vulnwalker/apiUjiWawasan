@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "view_bi_pemeliharaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_bi_pemeliharaan` AS (select `aa`.`id` AS `id`,`aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`noreg` AS `noreg`,`aa`.`thn_perolehan` AS `thn_perolehan`,`aa`.`jml_barang` AS `jml_barang`,`aa`.`satuan` AS `satuan`,`aa`.`harga` AS `harga`,`aa`.`jml_harga` AS `jml_harga`,`aa`.`asal_usul` AS `asal_usul`,`aa`.`kondisi` AS `kondisi`,`aa`.`status_barang` AS `status_barang`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`tahun` AS `tahun`,sum(`bb`.`biaya_pemeliharaan`) AS `biaya_pemeliharaan` from (`buku_induk` `aa` left join `pemeliharaan` `bb` on(((`aa`.`a1` = `bb`.`a1`) and (`aa`.`a` = `bb`.`a`) and (`aa`.`b` = `bb`.`b`) and (`aa`.`c` = `bb`.`c`) and (`aa`.`d` = `bb`.`d`) and (`aa`.`e` = `bb`.`e`) and (`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`i` = `bb`.`i`) and (`aa`.`j` = `bb`.`j`) and (`aa`.`noreg` = `bb`.`noreg`)))) group by concat(`aa`.`a1`,`aa`.`a`,`aa`.`b`,`aa`.`c`,`aa`.`d`,`aa`.`e`,`aa`.`f`,`aa`.`g`,`aa`.`h`,`aa`.`i`,`aa`.`j`,`aa`.`noreg`))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_jurnal_bi_aset_lainlain",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_jurnal_bi_aset_lainlain` AS select cast('01' as char(2) charset utf8) AS `kint`,cast('02' as char(2) charset utf8) AS `ka`,cast(if((`buku_induk`.`staset` = 5),'01',if((`buku_induk`.`staset` = 6),'02',if((`buku_induk`.`staset` = 7),'03',if((`buku_induk`.`staset` = 8),'04',if((`buku_induk`.`staset` = 9),'05',NULL))))) as char(2) charset utf8) AS `kb`,cast('07' as char(2) charset utf8) AS `f`,cast(if((`buku_induk`.`staset` = 5),'21',if((`buku_induk`.`staset` = 6),'22',if((`buku_induk`.`staset` = 7),'23',if((`buku_induk`.`staset` = 8),'24',if((`buku_induk`.`staset` = 9),'25','00'))))) as char(2) charset utf8) AS `g`,`buku_induk`.`jml_harga` AS `jml_harga`,`buku_induk`.`jml_barang` AS `jml_barang` from `buku_induk` where ((`buku_induk`.`staset` >= 4) and (`buku_induk`.`staset` <= 9))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

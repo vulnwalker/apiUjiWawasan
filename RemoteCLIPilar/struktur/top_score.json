@@ -1,0 +1,97 @@
+{
+    "tableName": "top_score",
+    "dumpFile": "dump\/top_score.sql",
+    "index": [
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        },
+        {
+            "column_name": "id",
+            "key_name": "PRIMARY",
+            "non_uniqe": "0"
+        }
+    ],
+    "colums": [
+        {
+            "COLUMN_NAME": "id",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "id_session",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "id_member",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        },
+        {
+            "COLUMN_NAME": "jumlah_point",
+            "COLUMN_TYPE": "int(11)",
+            "CHARACTER_SET_NAME": null,
+            "COLLATION_NAME": null,
+            "IS_NULLABLE": "NO"
+        }
+    ],
+    "default_value": [
+        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('1','1','13','3000') ",
+        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('2','1','13','3000') ",
+        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('3','1','13','3000') ",
+        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('4','1','13','3000') "
+    ]
+}

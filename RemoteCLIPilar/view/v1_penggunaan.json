@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_penggunaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_penggunaan` AS select `aa`.`id` AS `id`,`aa`.`id_penerimaan` AS `id_penerimaan`,`aa`.`sk_tgl` AS `sk_tgl`,`aa`.`sk_no` AS `sk_no`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`id_gudang` AS `id_gudang`,`aa`.`jml_barang` AS `jml_barang`,`aa`.`satuan` AS `satuan`,`aa`.`harga` AS `harga`,`aa`.`jml_harga` AS `jml_harga`,`aa`.`tgl_penyerahan` AS `tgl_penyerahan`,`aa`.`merk_barang` AS `merk_barang`,`aa`.`seri_pabrik` AS `seri_pabrik`,`aa`.`ukuran` AS `ukuran`,`aa`.`bahan` AS `bahan`,`aa`.`untuk` AS `untuk`,`aa`.`thn_buat` AS `thn_buat`,`aa`.`kondisi` AS `kondisi`,`aa`.`jenis_barang` AS `jenis_barang`,`aa`.`ket` AS `ket`,`aa`.`tahun` AS `tahun`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`uid` AS `uid`,`bb`.`nm_barang` AS `nm_barang` from (`pengeluaran_vlama` `aa` left join `ref_barang` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`i` = `bb`.`i`) and (`aa`.`j` = `bb`.`j`))))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

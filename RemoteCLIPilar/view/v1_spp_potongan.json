@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_spp_potongan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_spp_potongan` AS select `a`.`Id` AS `Id`,`a`.`jumlah` AS `jumlah`,`a`.`jns` AS `jns`,`a`.`status` AS `status`,`a`.`sttemp` AS `sttemp`,`a`.`tgl_create` AS `tgl_create`,`a`.`tgl_update` AS `tgl_update`,`a`.`refid_spp` AS `refid_spp`,`a`.`uid` AS `uid`,`a`.`uid_create` AS `uid_create`,`a`.`refid_potongan_spm` AS `refid_potongan_spm`,`b`.`k` AS `k`,`b`.`l` AS `l`,`b`.`m` AS `m`,`b`.`n` AS `n`,`b`.`o` AS `o`,`b`.`uraian_rek` AS `uraian_rek`,`b`.`refid_potongan` AS `refid_potongan`,`b`.`nama_potongan` AS `nama_potongan`,`b`.`persen` AS `persen`,`b`.`nm_rekening` AS `nm_rekening` from (`t_spp_potongan` `a` left join `v1_ref_potongan_spm_rek` `b` on((`a`.`refid_potongan_spm` = `b`.`Id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

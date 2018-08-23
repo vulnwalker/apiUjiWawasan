@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_rekapbi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_rekapbi` AS select `ref_barang`.`f` AS `kb`,`ref_barang`.`f` AS `f`,`ref_barang`.`g` AS `g`,`ref_barang`.`h` AS `h`,`ref_barang`.`i` AS `i`,`ref_barang`.`j` AS `j`,`ref_barang`.`nm_barang` AS `nm_barang` from `ref_barang` where (`ref_barang`.`f` <= 6) union select '07' AS `kb`,'07' AS `f`,'00' AS `g`,'00' AS `h`,'00' AS `i`,'000' AS `j`,'ASET TIDAK BERWUJUD' AS `nm_barang` union select `ref_barang`.`f` AS `kb`,`ref_barang`.`f` AS `f`,`ref_barang`.`g` AS `g`,`ref_barang`.`h` AS `h`,`ref_barang`.`i` AS `i`,`ref_barang`.`j` AS `j`,`ref_barang`.`nm_barang` AS `nm_barang` from `ref_barang` where ((`ref_barang`.`f` <= '07') and (`ref_barang`.`g` = '24'))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

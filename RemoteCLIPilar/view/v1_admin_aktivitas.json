@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_admin_aktivitas",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_admin_aktivitas` AS select `aa`.`uid` AS `uid`,`bb`.`nama` AS `nama`,`bb`.`level` AS `level`,`bb`.`group` AS `group`,`aa`.`login` AS `login`,`aa`.`lastaktif` AS `lastaktif`,(time_to_sec(timediff(`aa`.`lastaktif`,`aa`.`login`)) \/ 3600) AS `lama` from (`admin_aktivitas` `aa` left join `admin` `bb` on((`aa`.`uid` = `bb`.`uid`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

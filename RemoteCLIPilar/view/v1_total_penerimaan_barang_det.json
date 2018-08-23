@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_total_penerimaan_barang_det",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_total_penerimaan_barang_det` AS select ifnull(sum(`t_penerimaan_barang_det`.`jml_terima`),0) AS `jml`,ifnull(sum(`t_penerimaan_barang_det`.`harga_total`),0) AS `harga_total`,`t_penerimaan_barang_det`.`refid_terima` AS `refid_terima` from `t_penerimaan_barang_det` where (`t_penerimaan_barang_det`.`sttemp` = '0') group by `t_penerimaan_barang_det`.`refid_terima`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

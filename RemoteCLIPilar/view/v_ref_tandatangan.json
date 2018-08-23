@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_tandatangan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_tandatangan` AS select `aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`nip` AS `nip`,`aa`.`nama` AS `nama`,`aa`.`jabatan` AS `jabatan`,`aa`.`eselon` AS `eselon`,`aa`.`ruang` AS `ruang`,`aa`.`gol` AS `gol`,`aa`.`pangkat` AS `pangkat`,`bb`.`kategori_tandatangan` AS `kategori_ttd`,`aa`.`Id` AS `Id` from (`ref_tandatangan` `aa` left join `ref_kategori_tandatangan` `bb` on((`aa`.`kategori_tandatangan` = `bb`.`id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

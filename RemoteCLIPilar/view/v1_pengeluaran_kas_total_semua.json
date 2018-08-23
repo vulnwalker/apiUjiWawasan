@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_pengeluaran_kas_total_semua",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_pengeluaran_kas_total_semua` AS select `a`.`Id` AS `Id`,`a`.`c1` AS `c1`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`a`.`e1` AS `e1`,`a`.`dokumen_sumber` AS `dokumen_sumber`,`a`.`nomor_bukti` AS `nomor_bukti`,`a`.`tanggal` AS `tanggal`,`a`.`cara_bayar` AS `cara_bayar`,`a`.`nama_penerima` AS `nama_penerima`,`a`.`alamat` AS `alamat`,`a`.`refid_kas_bendahara` AS `refid_kas_bendahara`,`a`.`nama_bank` AS `nama_bank`,`a`.`norek_bank` AS `norek_bank`,`a`.`atasnama_bank` AS `atasnama_bank`,`a`.`keterangan` AS `keterangan`,`a`.`tahun` AS `tahun`,`a`.`sttemp` AS `sttemp`,`a`.`uid` AS `uid`,`a`.`tgl_create` AS `tgl_create`,`a`.`tgl_update` AS `tgl_update`,`a`.`uid_create` AS `uid_create`,`b`.`total` AS `total_rek`,`c`.`total` AS `total_pot` from ((`t_pengeluaran_kas` `a` left join `v1_pengeluaran_kas_total_rek` `b` on((`b`.`refid` = `a`.`Id`))) left join `v1_pengeluaran_kas_total_pot` `c` on((`c`.`refid` = `a`.`Id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

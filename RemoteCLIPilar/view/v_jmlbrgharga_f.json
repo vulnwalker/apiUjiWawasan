@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_jmlbrgharga_f",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_jmlbrgharga_f` AS select `aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`aa`.`f` AS `f`,sum(`aa`.`jml_barang`) AS `jml_barang`,sum(`aa`.`jml_harga`) AS `jml_harga` from `buku_induk` `aa` group by `aa`.`a1`,`aa`.`a`,`aa`.`b`,`aa`.`c`,`aa`.`d`,`aa`.`e`,`aa`.`e1`,`aa`.`f` order by `aa`.`a1`,`aa`.`a`,`aa`.`b`,`aa`.`c`,`aa`.`d`,`aa`.`e`,`aa`.`e1`,`aa`.`f`,`aa`.`g`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

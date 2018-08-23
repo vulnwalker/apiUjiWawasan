@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pengadaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pengadaan` AS select `pengadaan_sk`.`id` AS `id`,`pengadaan_sk`.`spk_tgl` AS `spk_tgl`,`pengadaan_sk`.`spk_no` AS `spk_no`,`pengadaan_sk`.`dpa_tgl` AS `dpa_tgl`,`pengadaan_sk`.`dpa_no` AS `dpa_no`,`pengadaan_sk`.`sttemp` AS `sttemp`,`pengadaan_sk`.`p` AS `p`,`pengadaan_sk`.`q` AS `q`,`pengadaan_sk`.`tgl_update` AS `tgl_update`,`pengadaan_sk`.`uid` AS `uid`,`pengadaan_sk`.`tahun` AS `tahun`,`pengadaan_sk`.`nama_pekerjaan` AS `nama_pekerjaan`,`pengadaan_sk`.`nama_perusahaan` AS `nama_perusahaan`,`pengadaan_sk`.`alamat` AS `alamat`,`pengadaan_sk`.`ket` AS `ket`,`pengadaan_sk`.`a1` AS `a1`,`pengadaan_sk`.`a` AS `a`,`pengadaan_sk`.`b` AS `b`,`pengadaan_sk`.`c` AS `c`,`pengadaan_sk`.`d` AS `d`,`pengadaan`.`id` AS `id_pengadaan`,sum(`pengadaan`.`jml_barang`) AS `jml_barang`,sum(`pengadaan`.`jml_harga`) AS `jml_harga`,`pengadaan`.`e` AS `e`,`pengadaan`.`e1` AS `e1` from (`pengadaan_sk` left join `pengadaan` on((`pengadaan_sk`.`id` = `pengadaan`.`ref_idsk`))) where (`pengadaan_sk`.`sttemp` = 0) group by `pengadaan_sk`.`id`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

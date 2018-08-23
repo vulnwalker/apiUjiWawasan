@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_test",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_test` AS select `a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`b`.`nm_skpd` AS `nm_skpd` from (`buku_induk` `a` left join `ref_skpd` `b` on(((`a`.`c` = `b`.`c`) and (`a`.`d` = `b`.`d`) and (`a`.`e` = `b`.`e`)))) order by `a`.`c`,`a`.`d`,`a`.`e`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

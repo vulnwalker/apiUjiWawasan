@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_hapus_bi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_hapus_bi` AS select `a`.`id` AS `id`,`a`.`a1` AS `a1`,`a`.`a` AS `a`,`a`.`b` AS `b`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`a`.`e1` AS `e1`,`a`.`f` AS `f`,`a`.`g` AS `g`,`a`.`h` AS `h`,`a`.`i` AS `i`,`a`.`j` AS `j`,`a`.`noreg` AS `noreg`,`a`.`harga` AS `harga`,`a`.`jml_barang` AS `jml_barang`,`b`.`tgl_penghapusan` AS `tgl_penghapusan`,year(`b`.`tgl_penghapusan`) AS `tahun_hapus` from (`penghapusan` `b` join `buku_induk` `a` on((`a`.`id` = `b`.`id_bukuinduk`))) where (`a`.`status_barang` = 3)",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

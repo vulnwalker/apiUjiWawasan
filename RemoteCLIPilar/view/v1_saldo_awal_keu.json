@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_saldo_awal_keu",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_saldo_awal_keu` AS select `aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`ref_jns_jurnal`.`nm_jns_jurnal` AS `nm_jns_jurnal`,`ref_jns_jurnal`.`st_pilih` AS `st_pilih`,`bb`.`debet` AS `debet`,`bb`.`kredit` AS `kredit`,`bb`.`debetkredit` AS `debetkredit`,`bb`.`anggaran` AS `anggaran`,`bb`.`ka` AS `ka`,`bb`.`kb` AS `kb`,`bb`.`kc` AS `kc`,`bb`.`kd` AS `kd`,`bb`.`ke` AS `ke`,`bb`.`kf` AS `kf`,`bb`.`nm_account` AS `nm_account`,`aa`.`Id` AS `Id`,`aa`.`status` AS `status`,`aa`.`thn_anggaran` AS `thn_anggaran`,`aa`.`tipe_jurnal` AS `tipe_jurnal` from ((`t_saldo_keu_det` `bb` left join `t_saldo_keu` `aa` on((`aa`.`Id` = `bb`.`refid_jurnal`))) left join `ref_jns_jurnal` on((`bb`.`jns_jurnal` = `ref_jns_jurnal`.`Id`)))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_bi_entry_darimutasi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_bi_entry_darimutasi` AS select `aa`.`tgl_update` AS `tgl_update`,`aa`.`uid` AS `uid`,`aa`.`status_barang` AS `status_barang`,`aa`.`jml_barang_tmp` AS `jml_barang_tmp`,`aa`.`id` AS `id`,`aa`.`id_lama` AS `id_lama`,`aa`.`idawal` AS `idawal`,`bb`.`status_barang` AS `status_barang2`,`bb`.`jml_barang_tmp` AS `jml_barang_tmp2`,`bb`.`id` AS `id2`,`bb`.`id_lama` AS `idlama2`,`bb`.`idawal` AS `idawal2` from (`buku_induk` `aa` left join `buku_induk` `bb` on((`bb`.`id` = `aa`.`id_lama`))) where (`bb`.`status_barang` = 3) order by `aa`.`tgl_update` desc",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

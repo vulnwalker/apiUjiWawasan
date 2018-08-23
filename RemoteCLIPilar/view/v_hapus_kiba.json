@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_hapus_kiba",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_hapus_kiba` AS select `a`.`id_bukuinduk` AS `id_bukuinduk`,`a`.`a1` AS `a1`,`a`.`a` AS `a`,`a`.`b` AS `b`,`a`.`c` AS `c`,`a`.`d` AS `d`,`a`.`e` AS `e`,`a`.`e1` AS `e1`,`a`.`f` AS `f`,`a`.`g` AS `g`,`a`.`h` AS `h`,`a`.`i` AS `i`,`a`.`j` AS `j`,`a`.`noreg` AS `noreg`,`b`.`harga` AS `harga`,`b`.`jml_barang` AS `jml_barang`,`b`.`tgl_buku` AS `tgl_buku`,`a`.`tgl_penghapusan` AS `tgl_penghapusan`,year(`a`.`tgl_penghapusan`) AS `tahun_hapus`,`c`.`alamat_a` AS `alamat_a`,`c`.`alamat_b` AS `alamat_b`,`c`.`alamat_c` AS `alamat_c` from ((`penghapusan` `a` left join `buku_induk` `b` on((`b`.`id` = `a`.`id_bukuinduk`))) left join `kib_a` `c` on((`a`.`id_bukuinduk` = `c`.`idbi`))) where (`a`.`f` = '01')",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

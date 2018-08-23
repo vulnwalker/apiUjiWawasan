@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_masterbarang_persediaan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_masterbarang_persediaan` AS select `aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`tahun_anggaran` AS `tahun_anggaran`,`aa`.`harga` AS `harga`,`aa`.`satuan` AS `satuan`,`bb`.`nama_barang` AS `nama_barang` from (`ref_hargabarang_persediaan` `aa` left join `ref_barang_persediaan` `bb` on(((`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`))))",
+    "CHARSET": "latin1",
+    "COLLATION": "latin1_swedish_ci"
+}

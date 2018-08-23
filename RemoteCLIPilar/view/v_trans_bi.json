@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_trans_bi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_trans_bi` AS select `aa`.`id` AS `idbi`,`bb`.`id_jns` AS `id_jns` from (`buku_induk` `aa` left join `v_ref_transaksi` `bb` on((`bb`.`id_jns` <> '')))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

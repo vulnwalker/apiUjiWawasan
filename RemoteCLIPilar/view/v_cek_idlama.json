@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_cek_idlama",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_cek_idlama` AS select `buku_induk`.`id_lama` AS `id_lama`,count(0) AS `cnt` from `buku_induk` where (`buku_induk`.`id_lama` is not null) group by `buku_induk`.`id_lama`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

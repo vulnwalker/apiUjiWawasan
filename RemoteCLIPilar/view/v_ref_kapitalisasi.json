@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_kapitalisasi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_kapitalisasi` AS select `bb`.`nm_barang` AS `nm_barang`,`aa`.`min_kapital` AS `min_kapital`,`aa`.`tahun` AS `tahun`,`aa`.`f1` AS `f1`,`aa`.`f2` AS `f2`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j` from (`ref_kapitalisasi` `aa` left join `ref_barang` `bb` on(((`aa`.`f1` = `bb`.`f1`) and (`aa`.`f2` = `bb`.`f2`) and (`aa`.`f` = `bb`.`f`) and (`aa`.`g` = `bb`.`g`) and (`aa`.`h` = `bb`.`h`) and (`aa`.`i` = `bb`.`i`) and (`aa`.`j` = `bb`.`j`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

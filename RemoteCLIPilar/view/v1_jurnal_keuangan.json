@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_jurnal_keuangan",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_jurnal_keuangan` AS select `aa`.`tgl_bukti` AS `tgl_bukti`,`aa`.`no_bukti` AS `no_bukti`,`bb`.`ka` AS `ka`,`bb`.`kb` AS `kb`,`bb`.`kc` AS `kc`,`bb`.`kd` AS `kd`,`bb`.`ke` AS `ke`,`bb`.`kf` AS `kf`,`bb`.`nm_account` AS `nm_account`,`bb`.`refid_jurnal` AS `refid_jurnal`,`bb`.`debet` AS `debet`,`bb`.`kredit` AS `kredit`,`ref_jns_jurnal`.`nm_jns_jurnal` AS `nm_jns_jurnal`,`aa`.`no_referensi` AS `no_referensi`,`aa`.`keterangan` AS `keterangan`,`aa`.`Id` AS `Id`,`bb`.`uid` AS `uid`,`bb`.`tgl_create` AS `tgl_create`,`bb`.`debetkredit` AS `debetkredit`,`aa`.`status` AS `status`,`aa`.`c1` AS `c1`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`e1` AS `e1`,`ref_jns_jurnal`.`st_pilih` AS `st_pilih`,`aa`.`jns_jurnal` AS `jns_jurnal`,`aa`.`no_bku` AS `no_bku` from ((`t_jurnal_keuangan` `aa` left join `t_jurnal_keuangan_det` `bb` on((`aa`.`Id` = `bb`.`refid_jurnal`))) left join `ref_jns_jurnal` on((`ref_jns_jurnal`.`Id` = `bb`.`jns_jurnal`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

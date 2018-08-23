@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_pemelihara_tot_",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_pemelihara_tot_` AS select `pemeliharaan`.`id_bukuinduk` AS `id_bukuinduk`,sum(`pemeliharaan`.`biaya_pemeliharaan`) AS `tot_pelihara` from `pemeliharaan` where (`pemeliharaan`.`tambah_aset` = 1) group by `pemeliharaan`.`id_bukuinduk`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

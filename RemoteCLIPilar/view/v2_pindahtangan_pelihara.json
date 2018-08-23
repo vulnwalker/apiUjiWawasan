@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v2_pindahtangan_pelihara",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v2_pindahtangan_pelihara` AS select `aa`.`id` AS `idpindah`,`aa`.`tgl_pemindahtanganan` AS `tgl_pemindahtanganan`,`aa`.`id_bukuinduk` AS `id_bukuinduk`,`aa`.`idbi_awal` AS `idbi_awal`,`bb`.`id` AS `idpelihara`,`bb`.`tgl_pemeliharaan` AS `tgl_pemeliharaan`,`bb`.`biaya_pemeliharaan` AS `biaya_pemeliharaan`,`aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`noreg` AS `noreg`,`aa`.`thn_perolehan` AS `thn_perolehan`,`bb`.`tambah_aset` AS `tambah_aset`,`bb`.`jenis_pemeliharaan` AS `jenis_pemeliharaan`,`bb`.`ket` AS `ket`,`aa`.`e1` AS `e1`,`aa`.`aset_tetap` AS `aset_tetap`,`aa`.`staset` AS `staset`,`aa`.`verifikasi` AS `verifikasi` from (`v1_pindahtangan` `aa` join `pemeliharaan` `bb` on(((`bb`.`idbi_awal` = `aa`.`idbi_awal`) and (`bb`.`tgl_pemeliharaan` < `aa`.`tgl_pemindahtanganan`)))) where ((`aa`.`idbi_awal` <> 0) and (`aa`.`idbi_awal` is not null))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

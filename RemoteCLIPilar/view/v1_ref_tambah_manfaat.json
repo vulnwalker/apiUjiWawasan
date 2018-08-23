@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v1_ref_tambah_manfaat",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v1_ref_tambah_manfaat` AS select `ref_tambah_manfaat`.`Id` AS `Id`,`ref_tambah_manfaat`.`f` AS `f`,`ref_tambah_manfaat`.`g` AS `g`,`ref_tambah_manfaat`.`h` AS `h`,`ref_tambah_manfaat`.`i` AS `i`,`ref_tambah_manfaat`.`j` AS `j`,`ref_tambah_manfaat`.`persen1` AS `persen1`,`ref_tambah_manfaat`.`persen2` AS `persen2`,`ref_tambah_manfaat`.`masa_manfaat` AS `masa_manfaat`,`ref_barang`.`nm_barang` AS `nm_barang` from (`ref_tambah_manfaat` left join `ref_barang` on(((`ref_tambah_manfaat`.`f` = `ref_barang`.`f`) and (`ref_tambah_manfaat`.`g` = `ref_barang`.`g`) and (`ref_tambah_manfaat`.`h` = `ref_barang`.`h`) and (`ref_tambah_manfaat`.`i` = `ref_barang`.`i`) and (`ref_tambah_manfaat`.`j` = `ref_barang`.`j`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

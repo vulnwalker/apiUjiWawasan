@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v3_pindah_gantirugi_pelihara",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v3_pindah_gantirugi_pelihara` AS select `aa`.`a1` AS `a1`,`aa`.`a` AS `a`,`aa`.`b` AS `b`,`aa`.`c` AS `c`,`aa`.`d` AS `d`,`aa`.`e` AS `e`,`aa`.`f` AS `f`,`aa`.`g` AS `g`,`aa`.`h` AS `h`,`aa`.`i` AS `i`,`aa`.`j` AS `j`,`aa`.`thn_perolehan` AS `thn_perolehan`,`aa`.`noreg` AS `noreg`,`aa`.`tambah_aset` AS `tambah_aset`,`aa`.`tgl_pemeliharaan` AS `tgl_pemeliharaan`,`aa`.`biaya_pemeliharaan` AS `biaya_pemeliharaan`,`aa`.`tgl_pemindahtanganan` AS `tgl`,`aa`.`e1` AS `e1` from `v2_pindahtangan_pelihara` `aa` union select `bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`e1` AS `e1`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`noreg` AS `noreg`,`bb`.`tambah_aset` AS `tambah_aset`,`bb`.`tgl_pemeliharaan` AS `tgl_pemeliharaan`,`bb`.`biaya_pemeliharaan` AS `biaya_pemeliharaan`,`bb`.`tgl_gantirugi` AS `tgl` from `v2_gantirugi_pelihara` `bb`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

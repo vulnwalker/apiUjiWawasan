@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "view_penerimaan_distribusi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_penerimaan_distribusi` AS select `detail_rincian_distribusi`.`id` AS `id`,`detail_rincian_distribusi`.`id_rincian_distribusi` AS `id_rincian_distribusi`,`distribusi`.`tanggal_buku` AS `tanggal_buku`,`distribusi`.`nomor` AS `nomor`,`detail_rincian_distribusi`.`jumlah` AS `jumlah`,`detail_rincian_distribusi`.`status` AS `status`,`detail_rincian_distribusi`.`c1` AS `c1`,`detail_rincian_distribusi`.`c` AS `c`,`detail_rincian_distribusi`.`d` AS `d`,`detail_rincian_distribusi`.`e` AS `e`,`detail_rincian_distribusi`.`e1` AS `e1`,`rincian_distribusi`.`f1` AS `f1`,`rincian_distribusi`.`f2` AS `f2`,`rincian_distribusi`.`f` AS `f`,`rincian_distribusi`.`g` AS `g`,`rincian_distribusi`.`h` AS `h`,`rincian_distribusi`.`i` AS `i`,`rincian_distribusi`.`j` AS `j`,`rincian_distribusi`.`j1` AS `j1`,`distribusi`.`id` AS `idDistribusi` from ((`detail_rincian_distribusi` join `rincian_distribusi` on((`detail_rincian_distribusi`.`id_rincian_distribusi` = `rincian_distribusi`.`id`))) join `distribusi` on((`rincian_distribusi`.`id_distribusi` = `distribusi`.`id`)))",
+    "CHARSET": "utf8mb4",
+    "COLLATION": "utf8mb4_general_ci"
+}

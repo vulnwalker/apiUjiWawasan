@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_hapus_sebagian",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_hapus_sebagian` AS select `aa`.`Id` AS `id`,`aa`.`id_bukuinduk` AS `id_bukuinduk`,`bb`.`a1` AS `a1`,`bb`.`a` AS `a`,`bb`.`b` AS `b`,`bb`.`c1` AS `c1`,`bb`.`c` AS `c`,`bb`.`d` AS `d`,`bb`.`e` AS `e`,`bb`.`f` AS `f`,`bb`.`g` AS `g`,`bb`.`h` AS `h`,`bb`.`i` AS `i`,`bb`.`j` AS `j`,`bb`.`thn_perolehan` AS `thn_perolehan`,`bb`.`noreg` AS `noreg`,`bb`.`nm_barang` AS `nm_barang`,`bb`.`tgl_buku` AS `tgl_buku`,`bb`.`e1` AS `e1`,`bb`.`kondisi` AS `kondisi`,`aa`.`tgl_penghapusan` AS `tgl_penghapusan`,`aa`.`uraian` AS `uraian`,`aa`.`ket` AS `ket`,`aa`.`harga_awal` AS `harga_awal`,`aa`.`harga_hapus` AS `harga_hapus`,`aa`.`surat_no` AS `surat_no`,`aa`.`surat_tgl` AS `surat_tgl`,`aa`.`tgl_update` AS `tgl_update`,`aa`.`uid` AS `uid`,`aa`.`idbi_awal` AS `idbi_awal`,`aa`.`harga_scrap` AS `harga_scrap`,`bb`.`aset_tetap` AS `aset_tetap`,`bb`.`staset` AS `staset`,`bb`.`verifikasi` AS `verifikasi`,`aa`.`tgl_perolehan` AS `tgl_perolehan`,`bb`.`f1` AS `f1`,`bb`.`f2` AS `f2`,`aa`.`nilai_buku` AS `nilai_buku`,`aa`.`nilai_susut` AS `nilai_susut` from (`penghapusan_sebagian` `aa` left join `view_buku_induk2` `bb` on((`aa`.`id_bukuinduk` = `bb`.`id`)))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

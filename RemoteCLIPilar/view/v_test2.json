@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_test2",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_test2` AS select ifnull(`buku_induk`.`c`,'00') AS `c`,ifnull(`buku_induk`.`d`,'00') AS `d`,ifnull(`buku_induk`.`e`,'00') AS `e`,ifnull(`buku_induk`.`e1`,'000') AS `e1`,sum(`buku_induk`.`jml_barang`) AS `jml_barang` from `buku_induk` group by `buku_induk`.`c`,`buku_induk`.`d`,`buku_induk`.`e`,`buku_induk`.`e1` with rollup",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

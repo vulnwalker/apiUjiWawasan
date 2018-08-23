@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_gantirugi",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_gantirugi` AS select `aa`.`id` AS `id`,`aa`.`id_bukuinduk` AS `id_bukuinduk`,`bb`.`Id` AS `id_bayar`,(select `buku_induk`.`harga` from `buku_induk` where (`buku_induk`.`id` = `aa`.`id_bukuinduk`) group by `buku_induk`.`id`) AS `harga_perolehan`,`aa`.`harga` AS `harga_sk`,(select sum(`gantirugi_bayar`.`harga`) from `gantirugi_bayar` where (`gantirugi_bayar`.`ref_idgantirugi` = `aa`.`id`) group by `bb`.`ref_idgantirugi`) AS `jml_bayar`,(select (`aa`.`harga` - if(isnull(`jml_bayar`),0,`jml_bayar`))) AS `sisa` from (`gantirugi` `aa` left join `gantirugi_bayar` `bb` on((`aa`.`id` = `bb`.`ref_idgantirugi`))) where (`aa`.`no_sk` <> '') group by `aa`.`id`",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

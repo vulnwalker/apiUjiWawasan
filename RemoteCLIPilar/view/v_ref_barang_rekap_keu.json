@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_ref_barang_rekap_keu",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_ref_barang_rekap_keu` AS select '01' AS `ka`,'00' AS `f`,'00' AS `g`,'Aset Tetap' AS `nm_barang` union select '01' AS `ka`,`ref_barang`.`f` AS `f`,`ref_barang`.`g` AS `g`,`ref_barang`.`nm_barang` AS `nm_barang` from `ref_barang` where ((`ref_barang`.`h` = '00') and (`ref_barang`.`f` <= '06')) union select '02' AS `ka`,'00' AS `f`,'00' AS `g`,'Aset Lainnya' AS `nm_barang` union select '02' AS `ka`,`ref_barang`.`f` AS `f`,`ref_barang`.`g` AS `g`,`ref_barang`.`nm_barang` AS `nm_barang` from `ref_barang` where ((`ref_barang`.`h` = '00') and (`ref_barang`.`f` > '06'))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}

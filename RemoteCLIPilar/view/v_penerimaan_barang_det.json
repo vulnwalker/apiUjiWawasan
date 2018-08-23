@@ -1,0 +1,6 @@
+{
+    "VIEW_NAME": "v_penerimaan_barang_det",
+    "VIEW_SOURCE": "CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_penerimaan_barang_det` AS select `a`.`nm_barang` AS `nm_barang`,`b`.`Id` AS `Id`,`b`.`c1` AS `c1`,`b`.`c` AS `c`,`b`.`d` AS `d`,`b`.`e` AS `e`,`b`.`e1` AS `e1`,`b`.`f1` AS `f1`,`b`.`f2` AS `f2`,`b`.`f` AS `f`,`b`.`g` AS `g`,`b`.`h` AS `h`,`b`.`i` AS `i`,`b`.`j` AS `j`,`b`.`ket_barang` AS `ket_barang`,`b`.`jml` AS `jml`,`b`.`satuan` AS `satuan`,`b`.`kuantitas` AS `kuantitas`,`b`.`ket_kuantitas` AS `ket_kuantitas`,`b`.`harga_satuan` AS `harga_satuan`,`b`.`harga_total` AS `harga_total`,`b`.`keterangan` AS `keterangan`,`b`.`barangdistribusi` AS `barangdistribusi`,`b`.`status` AS `status`,`b`.`tahun` AS `tahun`,`b`.`refid_terima` AS `refid_terima`,`b`.`jml_terima` AS `jml_terima`,`b`.`sesuai` AS `sesuai`,`b`.`tgl_create` AS `tgl_create`,`b`.`uid_create` AS `uid_create`,`b`.`tgl_update` AS `tgl_update`,`b`.`sttemp` AS `sttemp`,`b`.`pajak` AS `pajak`,`b`.`ppn` AS `ppn` from (`t_penerimaan_barang_det` `b` left join `ref_barang` `a` on(((`b`.`f` = `a`.`f`) and (`b`.`i` = `a`.`i`) and (`b`.`j` = `a`.`j`) and (`b`.`g` = `a`.`g`) and (`b`.`h` = `a`.`h`))))",
+    "CHARSET": "utf8",
+    "COLLATION": "utf8_general_ci"
+}
