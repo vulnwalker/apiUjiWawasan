@@ -63,10 +63,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO kategori (id,nama_kategori,deskripsi,gambar) values ('1','NASIONAL','Uji wawasan-mu, agar makin pintar.','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/kategori\/6404daaa6c91b38a43b3442ed2ca8425.jpg') ",
-        "INSERT INTO kategori (id,nama_kategori,deskripsi,gambar) values ('2','Sosial, Ekonomi dan Sejarah','Uji wawasan-mu tentang Sosial, Ekonomi dan Sejarah','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/kategori\/724b0c92c17edb0b0448138114a0647e.jpg') ",
-        "INSERT INTO kategori (id,nama_kategori,deskripsi,gambar) values ('3','Test Aja','Uji wawasan-mu tentang Sosial, Ekonomi dan Sejarah','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/kategori\/724b0c92c17edb0b0448138114a0647e.jpg') ",
-        "INSERT INTO kategori (id,nama_kategori,deskripsi,gambar) values ('4','Sport','Uji wawasan seputar olah raga','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/kategori\/96faa3e6c45bb5a07bcc0bcd3be37654.jpg') "
-    ]
+    "default_value": null
 }

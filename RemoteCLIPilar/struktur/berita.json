@@ -55,7 +55,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO berita (id,judul,gambar,deskripsi,tanggal) values ('1','Hadiah Bulan September','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/berita\/d41d8cd98f00b204e9800998ecf8427e.jpg','Hadiah akan diberikan kepada akun\/user dengan peringkat 1, 2 dan 3\r\nPeringkat 1 : Smartwatch  (*ongkir ditanggung Uji Wawasan)\r\nPeringkat 2 : Voucher pulsa senilai Rp.50.000\r\nPeringkat 3 : Voucher pulsa senilai Rp.20.000','2018-08-17') "
-    ]
+    "default_value": null
 }

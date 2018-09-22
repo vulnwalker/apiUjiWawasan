@@ -115,20 +115,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('47','s','s','s','s','s','1000','','99999849','0') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('68','Dzakir Harist Abdullah','dzakirharista@gmail.com','','ghfbbbj','56788','800','','2302','') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('69','Taufan Tritama Putra','taufantriputra@yahoo.co.id','12','Jsjsjjsj\nSsjsjjs','08262','','','279','4c83304beb0cb0bbLenovo A6020a465.1.1b2d7ccf9') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('70','Cipta','Cipta@gmail.com','123456','G','087726555555','','','461','83efd6ca4814b823ASUS_A0076.0.1J1AKGF003019NY4') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('71','Indra','','pras80','Jl.pajagalan no.77 bandung','087723276547','1150','ACTIVE','2582','83efd6ca4814b823ASUS_A0076.0.1J1AKGF003019NY4') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('72','Restu Juniarto Mustopa','shirasaki_tsugumi@yahoo.co.id','','Cibodas','081336458463','10199','','90','') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('73','Ari Yustia Saputra','ari_yustiasaputra@yahoo.co.id','','fdggv','0895359872235','','','425','') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('74','Ananda Mahdar','kuhakuneiyoh@gmail.com','kirisakisan','&#*:\"','081557skaj','100','','44','adac3a1404ba595fX90095.1LRKB49LZKBZPVGG6') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('77','Indra prasetyo','indraprasetyo@gmail.com','qerrty888','Jl.pajagalan no.77','087756542541','','','189','2e29a38bec20d57vivo 17187.1.2c7f7aa98') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('78','Arkan','','asdfgh','Tanjungsari','087765384921','4550','ACTIVE','785','2c498861a86d1b0cTA-10327.0NE1GAM4771320754') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('79','Wahyu Ariyadi','wahyu.ariyadi@ymail.com','','Jalan Benowo lll gang klitik Perum Pondok Baru Blok C-41 Rt09\/Rw22 Sonojiwan Makamhaji Kartasura Sukoharjo 57161','081327143639','3200','','263','') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('80','Edi','Kadekedi16121989@gmail.com','edilovedevi','Singaraja bali','081239507895','650','','102','6cb71f1b0b5862a8vivo 16016.07SMB9PW499999999') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('81','Affandri Herdo','affandriherdo@gmail.com','','Kepahiang','085378884905','','','381','') ",
-        "INSERT INTO member (id,nama,email,password,alamat,no_telpn,point,akses,energi,idhp) values ('82','Diana Pasaribu','','','Ciputat','08161370574','','','','') "
-    ]
+    "default_value": null
 }

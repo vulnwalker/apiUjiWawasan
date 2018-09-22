@@ -100,9 +100,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('1','BANNER','100','5','ca-app-pub-8479837945864676\/5792440820') ",
-        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('3','VIDEO','100,500','10','ca-app-pub-4476830950169301\/9067200768\r\n') ",
-        "INSERT INTO type_iklan (id,jenis_iklan,energi,delay,ad_unit) values ('4','POPUP','','0','ca-app-pub-4476830950169301\/9067200768\r\n') "
-    ]
+    "default_value": null
 }

@@ -65,7 +65,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO hadiah (id,id_session,nama,deskripsi,gambar) values ('1','1','Smartwatch (*ongkir ditanggung Uji Wawasan) , pulsa','Hadiah akan diberikan kepada akun\/user dengan peringkat 1, 2 dan 3\r\nPeringkat 1 : Smartwatch  (*ongkir ditanggung Uji Wawasan)\r\nPeringkat 2 : Voucher pulsa senilai Rp.50.000\r\nPeringkat 3 : Voucher pulsa senilai Rp.20.000','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/hadiah\/6243eda0c65786d9dd589b1536b12a28.jpg') "
-    ]
+    "default_value": null
 }

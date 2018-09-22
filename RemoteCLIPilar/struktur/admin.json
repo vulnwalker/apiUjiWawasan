@@ -50,13 +50,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('1','kszxpo','319949ab1252fc41bf437c3dea2859bdd1cad966','VulnWalker','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('2','SA','10470c3b4b1fed12c3baac014be15fac67c6e815','Iwan','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('3','syfa','10470c3b4b1fed12c3baac014be15fac67c6e815','Syfa','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('4','nemo','c797c198a796c270b115a05aa92dde4ad7517417','Iwan','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('5','saeful','c797c198a796c270b115a05aa92dde4ad7517417','Saeful','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('6','chandra','c797c198a796c270b115a05aa92dde4ad7517417','Akai','1;2;3;4') ",
-        "INSERT INTO admin (id,username,password,nama,hak_akses) values ('7','cipta','10470c3b4b1fed12c3baac014be15fac67c6e815','Cipta','1;2;3;4') "
-    ]
+    "default_value": null
 }

@@ -92,7 +92,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO sesion (id,tanggal_mulai,tanggal_selesai,judul,deskripsi,gambar) values ('1','2018-08-16','2018-09-16','Bulan Agustus','-','http:\/\/admin.ujiwawasan.rm-rf.studio\/images\/session\/bdad1e374ee42dd2bffce8cd308b2821.jpg') "
-    ]
+    "default_value": null
 }

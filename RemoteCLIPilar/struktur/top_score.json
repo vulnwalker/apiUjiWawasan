@@ -88,10 +88,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": [
-        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('1','1','13','3000') ",
-        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('2','1','13','3000') ",
-        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('3','1','13','3000') ",
-        "INSERT INTO top_score (id,id_session,id_member,jumlah_point) values ('4','1','13','3000') "
-    ]
+    "default_value": null
 }

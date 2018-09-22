@@ -75,5 +75,5 @@
             "IS_NULLABLE": "NO"
         }
     ],
-    "default_value": []
+    "default_value": null
 }

@@ -30,11 +30,11 @@ class Energi extends Controller
 
         $queryVideo = sqlQuery("select * from type_iklan where id='3'");
 		$dataArrayVideo = array();
-        
+
         while ($getDataVideo = sqlArray($queryVideo)) {
              $dataArrayVideo[] = $getDataVideo;
         }
-		
+
 		$this->content = $dataArrayVideo;
 
       $this->sendPayload(
@@ -61,10 +61,11 @@ class Energi extends Controller
       foreach ($request as $key => $value) {
           $$key = $value;
       }
+      $idUnit = sqlArray(sqlQuery("select * from type_iklan where id = '3' "));
       $getDataTypeIklan = sqlArray(sqlQuery("SELECT * FROM  type_iklan where id ='3'"));
       $getMaxId = sqlArray(sqlQuery("SELECT max(id) as maxId FROM  charge_energi where id_member ='$IdUser'"));
       $getDataEnergi= sqlArray(sqlQuery("SELECT * FROM  charge_energi where id ='".$getMaxId['maxId']."'"));
-      
+
       $selisiWaktu = $this->convertTimeToInteger(date("Y-m-d").";".date("H:i")) - $this->convertTimeToInteger($getDataEnergi['tanggal'].";".$getDataEnergi['jam']);
       if($selisiWaktu >  $getDataTypeIklan['delay'] ){
 
@@ -75,17 +76,20 @@ class Energi extends Controller
         'jam' => date('H:i'),
         'type_iklan' => '3',
       );
-      
+
       $explodeEnergi = explode(',',$getDataTypeIklan['energi']);
       $arrayMember =  array(
         'energi' => $getDataMember['energi']+rand($explodeEnergi[0],$explodeEnergi[1]),
       );
 
       $queryEnergi = sqlInsert("charge_energi",$arrayEnergi);
-      sqlQuery($queryEnergi); 
+      sqlQuery($queryEnergi);
       sqlQuery(sqlUpdate('member', $arrayMember,"id='$IdUser'"));
+      $dataIdunit=array();
+      $dataIdunit[] = array('id_unit' => $idUnit['ad_unit']);
+       $this->content = $dataIdunit;
       }else{
-        $this->err = "Maaf anda harus menunggu selama ".$getDataTypeIklan['delay']." menit";
+        $this->err = "Maaf anda harus menunggu selama ".$getDataTypeIklan['delay']." menit ";
       }
 
       $this->sendPayload(
@@ -106,7 +110,7 @@ class Energi extends Controller
 
     function convertTimeToInteger($concatTanggalJam){
       $explodeTanggalJamConcat = explode(";",$concatTanggalJam);
-      $integerTanggal = $this->dateToInteger($this->generateDate($explodeTanggalJamConcat[0]));
+      $integerTanggal = $this->dateToInteger($explodeTanggalJamConcat[0]);
       $integerJam = $this->timeToInteger($explodeTanggalJamConcat[1]);
       $integerValue = $integerTanggal + $integerJam;
       return $integerValue;
@@ -132,6 +136,6 @@ class Energi extends Controller
           $tanggal = $tanggal[2]."-".$tanggal[1]."-".$tanggal[0];
           return $tanggal;
     }
-    
+
 
 }
